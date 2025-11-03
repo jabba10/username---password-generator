@@ -1,0 +1,7 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/create-free-username-and-password-with-accessvaulted-generator": "pages/create-free-username-and-password-with-accessvaulted-generator.js"
+}

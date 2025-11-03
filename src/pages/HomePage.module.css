@@ -1,0 +1,447 @@
+/* HomePage.module.css */
+
+.landingContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #001933;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: #001933;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.heroActions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.btnPrimary {
+  background-color: #001933;
+  color: #ffffff;
+}
+
+.btnPrimary:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+
+.btnLarge {
+  padding: 16px 40px;
+  font-size: 1.125rem;
+}
+
+.btnCard {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #001933;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.btnCard:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+
+/* Section Header */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #001933;
+  margin-bottom: 16px;
+}
+
+.sectionSubtitle {
+  font-size: 1.125rem;
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+.featuresSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 25, 51, 0.1);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.15);
+}
+
+.cardIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.featureCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 16px;
+}
+
+.featureCard p {
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* How It Works Section */
+.howItWorksSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.stepsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.stepNumber {
+  width: 60px;
+  height: 60px;
+  background-color: #001933;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+.step h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 16px;
+}
+
+.step p {
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.stepArrow {
+  font-size: 2rem;
+  color: #001933;
+  opacity: 0.5;
+  margin-top: 30px;
+}
+
+/* Stats Section */
+.statsSection {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #001933;
+  margin-bottom: 8px;
+}
+
+.statLabel {
+  font-size: 1.125rem;
+  color: #001933;
+  opacity: 0.8;
+}
+
+/* Testimonial Section */
+.testimonialSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.testimonialsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 25, 51, 0.1);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+}
+
+.testimonialText {
+  font-size: 1.125rem;
+  color: #001933;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  border-top: 1px solid rgba(0, 25, 51, 0.1);
+  padding-top: 20px;
+}
+
+.authorName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 4px;
+}
+
+.authorTitle {
+  font-size: 1rem;
+  color: #001933;
+  opacity: 0.7;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.ctaCard {
+  background-color: #ffffff;
+  padding: 60px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.1);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaCard h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #001933;
+  margin-bottom: 16px;
+}
+
+.ctaCard p {
+  font-size: 1.125rem;
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaActions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landingContainer {
+    padding: 0 16px;
+  }
+  
+  .heroSection {
+    padding: 60px 16px;
+  }
+  
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.125rem;
+  }
+  
+  .heroActions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+  
+  .featuresSection,
+  .howItWorksSection,
+  .testimonialSection,
+  .ctaSection {
+    padding: 60px 16px;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .featureCard {
+    padding: 30px 20px;
+  }
+  
+  .stepsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .stepArrow {
+    transform: rotate(90deg);
+    margin: 0;
+  }
+  
+  .statsContainer {
+    gap: 40px;
+  }
+  
+  .statNumber {
+    font-size: 2.5rem;
+  }
+  
+  .testimonialsContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .testimonialCard {
+    padding: 30px 20px;
+  }
+  
+  .ctaCard {
+    padding: 40px 20px;
+  }
+  
+  .ctaCard h2 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.875rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+  
+  .btnLarge {
+    padding: 14px 32px;
+    font-size: 1rem;
+  }
+  
+  .sectionHeader h2 {
+    font-size: 1.75rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .featureCard {
+    min-width: 100%;
+  }
+  
+  .testimonialsContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaCard h2 {
+    font-size: 1.625rem;
+  }
+}

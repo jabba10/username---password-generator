@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://www.accessvaulted.com
+
+# Sitemaps
+Sitemap: https://www.accessvaulted.com/sitemap.xml
