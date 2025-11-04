@@ -1,0 +1,395 @@
+/* globals.css */
+
+/* CSS Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #001933;
+  line-height: 1.6;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Global Container Styles */
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Global Card Styles */
+.global-card {
+  background-color: #ffffff;
+  padding: clamp(30px, 4vw, 40px) clamp(20px, 3vw, 30px);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 25, 51, 0.1);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.global-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.15);
+}
+
+/* Global Button Styles */
+.global-btn {
+  display: inline-flex;
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  background-color: #001933;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.global-btn:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+
+.global-btn-large {
+  padding: clamp(14px, 4vw, 16px) clamp(24px, 6vw, 40px);
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+}
+
+.global-btn-secondary {
+  background-color: transparent;
+  border: 2px solid #001933;
+  color: #001933;
+}
+
+.global-btn-secondary:hover {
+  background-color: #001933;
+  color: #ffffff;
+}
+
+/* Global Section Styles */
+.global-section {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.global-section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.global-section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #001933;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.global-section-subtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Global Grid Layout */
+.global-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.global-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+}
+
+.global-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+/* Global Text Styles */
+.global-text-center {
+  text-align: center;
+}
+
+.global-text-left {
+  text-align: left;
+}
+
+.global-text-right {
+  text-align: right;
+}
+
+.global-heading-1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #001933;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.global-heading-2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #001933;
+  line-height: 1.3;
+}
+
+.global-heading-3 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 600;
+  color: #001933;
+  line-height: 1.4;
+}
+
+.global-body-text {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.global-small-text {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: #001933;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+/* Global Form Elements */
+.global-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid rgba(0, 25, 51, 0.2);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #001933;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.global-input:focus {
+  outline: none;
+  border-color: #001933;
+  box-shadow: 0 0 0 3px rgba(0, 25, 51, 0.1);
+}
+
+.global-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #001933;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Global Utility Classes */
+.global-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.global-flex {
+  display: flex;
+}
+
+.global-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.global-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.global-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.global-full-width {
+  width: 100%;
+}
+
+.global-text-center {
+  text-align: center;
+}
+
+.global-margin-auto {
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .global-section {
+    padding: 60px 16px;
+  }
+  
+  .global-section-header {
+    margin-bottom: 40px;
+  }
+  
+  .global-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .global-card {
+    padding: 25px 20px;
+  }
+  
+  .global-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .global-container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .global-section {
+    padding: 40px 12px;
+  }
+  
+  .global-card {
+    padding: 20px 15px;
+  }
+  
+  .global-container {
+    padding: 0 12px;
+  }
+  
+  .global-btn {
+    padding: 10px 24px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .global-section {
+    padding: 30px 8px;
+  }
+  
+  .global-card {
+    padding: 15px 10px;
+  }
+  
+  .global-container {
+    padding: 0 8px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1440px) {
+  .global-container {
+    max-width: 1400px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .global-btn {
+    background-color: #001933 !important;
+    color: #ffffff !important;
+    border: 1px solid #001933 !important;
+  }
+  
+  .global-card {
+    box-shadow: none !important;
+    border: 1px solid #001933 !important;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .global-card {
+    border: 2px solid #001933;
+  }
+  
+  .global-input {
+    border: 2px solid #001933;
+  }
+  
+  .global-body-text {
+    opacity: 1;
+  }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+  /* Base dark mode styles can be added here */
+  /* Currently maintaining light theme as per requirements */
+}
+
+/* Focus styles for accessibility */
+.global-btn:focus-visible,
+.global-input:focus-visible {
+  outline: 2px solid #001933;
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background-color: rgba(0, 25, 51, 0.2);
+  color: #001933;
+}

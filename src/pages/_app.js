@@ -4,12 +4,12 @@ import './globals.css';
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <div className="app-container">
       <Navbar />
       <main className="app-wrapper">
         <Component {...pageProps} />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
