@@ -63,6 +63,7 @@
   opacity: 0.8;
   margin-bottom: 20px;
   text-align: left;
+  line-height: 1.6;
 }
 
 .aboutContent strong {
@@ -85,6 +86,16 @@
   padding-left: 0;
   line-height: 1.6;
   text-align: left;
+  position: relative;
+}
+
+.aboutList li::before {
+  content: "•";
+  color: #001933;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .aboutList li strong {
@@ -114,11 +125,24 @@
   align-items: center;
   white-space: nowrap;
   text-align: center;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .generateBtn:hover {
   background-color: #003366;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 25, 51, 0.2);
+}
+
+.generateBtn:active {
+  transform: translateY(0);
+}
+
+/* Focus states for accessibility */
+.generateBtn:focus-visible {
+  outline: 2px solid #001933;
+  outline-offset: 2px;
 }
 
 /* Responsive Design */
@@ -132,14 +156,14 @@
   }
   
   .aboutContent {
-    text-align: center;
+    text-align: left;
   }
   
   .aboutContent h3,
   .aboutContent p,
   .aboutList,
   .aboutList li {
-    text-align: center;
+    text-align: left;
   }
   
   .aboutCta {
@@ -162,30 +186,10 @@
     padding: 25px 15px;
   }
   
-  .aboutList li {
-    text-align: left;
-    padding-left: 0;
-  }
-  
   .generateBtn {
     width: 100%;
     max-width: 100%;
     padding: 12px 20px;
-  }
-}
-
-@media (max-width: 320px) {
-  .aboutContainer {
-    padding: 15px 8px;
-  }
-  
-  .aboutCard {
-    padding: 20px 10px;
-  }
-  
-  .generateBtn {
-    font-size: 0.875rem;
-    padding: 10px 16px;
   }
 }
 
@@ -200,21 +204,33 @@
   }
 }
 
-/* Ensure proper spacing on very small devices */
-@media (max-width: 280px) {
-  .aboutContainer {
-    padding: 10px 5px;
+/* Loading animation for button */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.generateBtn:disabled {
+  animation: pulse 1.5s ease-in-out infinite;
+  background-color: rgba(0, 25, 51, 0.5);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .generateBtn {
+    transition: none;
   }
   
-  .aboutCard {
-    padding: 15px 8px;
-  }
-  
-  .aboutTitle {
-    font-size: 1.5rem;
-  }
-  
-  .aboutSubtitle {
-    font-size: 0.9rem;
+  .generateBtn:hover {
+    transform: none;
   }
 }
