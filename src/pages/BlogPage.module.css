@@ -110,6 +110,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .featuredBadge {
@@ -149,8 +150,10 @@
 .featuredActions {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .readMoreBtn {
@@ -168,6 +171,7 @@
   border: 2px solid transparent;
   white-space: nowrap;
   text-align: center;
+  min-width: 140px;
 }
 
 .readMoreBtn:hover {
@@ -190,6 +194,7 @@
   transition: all 0.3s ease;
   white-space: nowrap;
   text-align: center;
+  min-width: 140px;
 }
 
 .generateBtn:hover {
@@ -219,7 +224,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
+  position: relative;
 }
 
 .articleCard:hover {
@@ -279,10 +286,36 @@
 .articleActions {
   display: flex;
   gap: 12px;
-  margin-top: 24px;
+  margin-top: auto;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  padding-top: 24px;
+}
+
+.readMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  background-color: #001933;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+  max-width: 200px;
+}
+
+.readMoreBtn:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
 }
 
 .quickLink {
@@ -301,6 +334,7 @@
   text-align: center;
   flex: 1;
   min-width: 120px;
+  max-width: 200px;
 }
 
 .quickLink:hover {
@@ -410,12 +444,14 @@
   .featuredActions {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
   
   .readMoreBtn,
   .generateBtn {
     width: 100%;
     max-width: 300px;
+    min-width: auto;
   }
   
   .articlesGrid {
@@ -437,12 +473,15 @@
   .articleActions {
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    gap: 12px;
   }
   
   .readMoreBtn,
   .quickLink {
     width: 100%;
     max-width: 300px;
+    min-width: auto;
   }
   
   .blogNavigation {
@@ -490,6 +529,18 @@
     padding: 14px 32px;
     font-size: 1rem;
   }
+  
+  .articleActions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .readMoreBtn,
+  .quickLink {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 20px;
+  }
 }
 
 /* Extra small devices */
@@ -509,12 +560,35 @@
     padding: 10px 20px;
     font-size: 0.875rem;
   }
+  
+  .articleActions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .readMoreBtn,
+  .quickLink {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 0.8rem;
+  }
 }
 
 /* Large screens */
 @media (min-width: 1440px) {
   .blogContainer {
     max-width: 1400px;
+  }
+  
+  .articleActions {
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .readMoreBtn,
+  .quickLink {
+    flex: 0 1 auto;
+    min-width: 140px;
   }
 }
 
@@ -549,31 +623,81 @@
   }
 }
 
-/* Ensure consistent colors on all screen sizes */
+/* Button centering enhancements */
+.featuredActions,
+.articleActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure consistent button alignment across all cards */
+.articleCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.articleCard .articleActions {
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Center alignment for all button containers */
+.ctaButtons,
+.featuredActions,
+.articleActions {
+  text-align: center;
+}
+
+/* Consistent button sizing and spacing */
+.readMoreBtn,
+.quickLink,
+.generateBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mobile-first button centering */
 @media (max-width: 768px) {
-  .blogContainer,
-  .blogHeader,
-  .featuredArticle,
-  .articleCard,
-  .blogNavigation {
-    background-color: #ffffff;
+  .featuredActions,
+  .articleActions {
+    flex-direction: column;
+    align-items: center;
   }
   
-  .blogTitle,
-  .blogSubtitle,
-  .featuredTitle,
-  .articleTitle,
-  .articleExcerpt,
-  .articleDate,
-  .navSection h3,
-  .navLink,
-  .topicLink {
-    color: #001933;
+  .readMoreBtn,
+  .quickLink,
+  .generateBtn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Desktop button optimization */
+@media (min-width: 769px) {
+  .articleActions {
+    flex-wrap: nowrap;
+    justify-content: center;
   }
   
-  .tag,
+  .readMoreBtn,
   .quickLink {
-    background-color: rgba(0, 25, 51, 0.1);
-    color: #001933;
+    flex: 0 1 auto;
+    min-width: 140px;
   }
+}
+
+/* Ensure buttons are always centered regardless of content length */
+.articleCard {
+  text-align: center;
+}
+
+.articleHeader,
+.articleTitle,
+.articleExcerpt,
+.articleActions {
+  text-align: center;
+  justify-content: center;
 }

@@ -93,12 +93,12 @@ const Navbar = () => {
               Blog
             </Link>
             
-            <Link href="/about" className={styles.navLink} onClick={closeMenu}>
+            <Link href="/about-us" className={styles.navLink} onClick={closeMenu}>
               <span className={styles.navIcon}>ℹ️</span>
               About
             </Link>
             
-            <Link href="/contact" className={styles.navLink} onClick={closeMenu}>
+            <Link href="/contact-us" className={styles.navLink} onClick={closeMenu}>
               <span className={styles.navIcon}>✉️</span>
               Contact
             </Link>

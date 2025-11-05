@@ -1,0 +1,537 @@
+/* contact-us.module.css */
+
+.contactContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #001933;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.heroSubtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #001933;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  opacity: 0.8;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section Header */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #001933;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Contact Section */
+.contactSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Contact Form Card - Centered */
+.contactFormCard {
+  background-color: #ffffff;
+  padding: clamp(40px, 4vw, 50px) clamp(30px, 3vw, 40px);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.1);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactFormCard:hover {
+  box-shadow: 0 12px 35px rgba(0, 25, 51, 0.15);
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.formHeader h3 {
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.formHeader p {
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+}
+
+/* Form Styles */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formLabel {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 600;
+  color: #001933;
+  text-align: left;
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  padding: 12px 16px;
+  border: 2px solid rgba(0, 25, 51, 0.2);
+  border-radius: 6px;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: #001933;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  width: 100%;
+}
+
+.formInput:focus,
+.formSelect:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: #001933;
+  box-shadow: 0 0 0 3px rgba(0, 25, 51, 0.1);
+}
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: rgba(0, 25, 51, 0.5);
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.5;
+}
+
+.formSelect {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23001933' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px;
+}
+
+/* Submit Button */
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: clamp(14px, 4vw, 16px) clamp(24px, 6vw, 40px);
+  background-color: #001933;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: #003366;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 25, 51, 0.2);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submitBtnLoading {
+  background-color: #003366;
+}
+
+/* Spinner */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Status Messages */
+.successMessage {
+  padding: 16px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  text-align: center;
+}
+
+.errorMessage {
+  padding: 16px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  text-align: center;
+}
+
+/* FAQ Section */
+.faqSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.faqCard {
+  background-color: #ffffff;
+  padding: clamp(30px, 4vw, 40px) clamp(25px, 3vw, 35px);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 25, 51, 0.1);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  transition: all 0.3s ease;
+}
+
+.faqCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.15);
+}
+
+.faqCard h4 {
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.faqCard p {
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctaCard {
+  background-color: #ffffff;
+  padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 40px);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.1);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ctaCard h2 {
+  font-size: clamp(1.625rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: #001933;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.ctaCard p {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.ctaActions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.btnPrimary {
+  background-color: #001933;
+  color: #ffffff;
+}
+
+.btnPrimary:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+
+.btnLarge {
+  padding: clamp(14px, 4vw, 16px) clamp(24px, 6vw, 40px);
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .contactContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .contactFormCard {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    padding: 0 16px;
+  }
+  
+  .heroSection {
+    padding: 60px 16px;
+  }
+  
+  .contactSection,
+  .faqSection,
+  .ctaSection {
+    padding: 60px 16px;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .faqGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .ctaActions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ctaActions .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactContainer {
+    padding: 0 12px;
+  }
+  
+  .heroSection {
+    padding: 40px 12px;
+  }
+  
+  .contactSection,
+  .faqSection,
+  .ctaSection {
+    padding: 40px 12px;
+  }
+  
+  .contactFormCard,
+  .faqCard,
+  .ctaCard {
+    padding: 25px 15px;
+  }
+  
+  .submitBtn,
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.875rem;
+    width: 100%;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+  .contactContainer {
+    padding: 0 8px;
+  }
+  
+  .heroSection,
+  .contactSection,
+  .faqSection,
+  .ctaSection {
+    padding: 30px 8px;
+  }
+  
+  .contactFormCard,
+  .faqCard {
+    padding: 20px 10px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1440px) {
+  .contactContainer {
+    max-width: 1400px;
+  }
+}
+
+/* Ensure full viewport height on mobile */
+@media (max-height: 700px) and (max-width: 768px) {
+  .heroSection {
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .contactFormCard,
+  .faqCard,
+  .submitBtn,
+  .btn {
+    transition: none;
+  }
+  
+  .submitBtn:hover:not(:disabled),
+  .btn:hover {
+    transform: none;
+  }
+  
+  .spinner {
+    animation: none;
+  }
+}

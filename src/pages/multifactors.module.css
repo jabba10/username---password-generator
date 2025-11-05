@@ -1,0 +1,718 @@
+.articleContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  /* Critical: Add top padding to account for fixed navigation */
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  background: linear-gradient(135deg, #001933 0%, #003366 100%);
+  color: white;
+  /* Increased top padding with safe area consideration */
+  padding: clamp(100px, 15vw, 140px) 20px clamp(60px, 10vw, 100px) 20px;
+  text-align: center;
+  /* Counteract container padding to maintain full-height background */
+  margin-top: -80px;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.heroSubtitle {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  opacity: 0.9;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Content Sections */
+.contentSection {
+  width: 100%;
+  /* Increased padding for better mobile spacing */
+  padding: clamp(60px, 10vw, 90px) 20px;
+  background: #ffffff;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #001933;
+  margin-bottom: 16px;
+}
+
+.sectionSubtitle {
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.articleCard {
+  background: #ffffff;
+  padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 40px);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 25, 51, 0.1);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.articleContent {
+  color: #001933;
+  line-height: 1.7;
+}
+
+.contentBlock {
+  margin-bottom: 40px;
+}
+
+.contentBlock:last-child {
+  margin-bottom: 0;
+}
+
+.contentBlock h3 {
+  font-size: clamp(1.375rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 20px;
+}
+
+.contentBlock p {
+  font-size: clamp(1.0625rem, 2vw, 1.125rem);
+  color: #001933;
+  opacity: 0.9;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.contentBlock strong {
+  color: #001933;
+  font-weight: 600;
+}
+
+/* MFA Types Grid */
+.mfaTypesSection {
+  width: 100%;
+  /* Increased padding for mobile */
+  padding: clamp(80px, 12vw, 110px) 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.mfaTypesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mfaTypeCard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 25, 51, 0.08);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mfaTypeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 25, 51, 0.15);
+}
+
+.mfaIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.mfaTypeCard h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 16px;
+}
+
+.mfaTypeCard p {
+  font-size: 1rem;
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mfaSecurityLevel {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.securityHigh {
+  background: #d4edda;
+  color: #155724;
+}
+
+.securityMedium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.securityLow {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Security Hierarchy Section */
+.securitySection {
+  width: 100%;
+  /* Increased padding for mobile */
+  padding: clamp(80px, 12vw, 110px) 20px;
+  background: #ffffff;
+}
+
+.securityHierarchy {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.securityLevel {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 25, 51, 0.08);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.securityLevel:hover {
+  transform: translateX(10px);
+}
+
+.securityLevel:last-child {
+  margin-bottom: 0;
+}
+
+.securityRank {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #001933;
+  min-width: 40px;
+}
+
+.securityContent {
+  flex: 1;
+}
+
+.securityContent h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 8px;
+}
+
+.securityContent p {
+  font-size: 1.0625rem;
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Best Practices Section */
+.bestPracticesSection {
+  width: 100%;
+  /* Increased padding for mobile */
+  padding: clamp(80px, 12vw, 110px) 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.practicesContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.practiceCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 25, 51, 0.08);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  margin-bottom: 24px;
+  transition: transform 0.3s ease;
+}
+
+.practiceCard:hover {
+  transform: translateX(10px);
+}
+
+.practiceCard:last-child {
+  margin-bottom: 0;
+}
+
+.practiceIcon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.practiceContent {
+  flex: 1;
+}
+
+.practiceContent h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 12px;
+}
+
+.practiceContent p {
+  font-size: 1.0625rem;
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Example Section */
+.exampleSection {
+  width: 100%;
+  /* Increased padding for mobile */
+  padding: clamp(60px, 10vw, 90px) 20px;
+  background: #ffffff;
+}
+
+.exampleCard {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 25, 51, 0.1);
+  border: 1px solid rgba(0, 25, 51, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.exampleCard h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #001933;
+  margin-bottom: 30px;
+}
+
+.examplesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.exampleBad, .exampleGood {
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.exampleBad {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  color: white;
+}
+
+.exampleGood {
+  background: linear-gradient(135deg, #51cf66 0%, #40c057 100%);
+  color: white;
+}
+
+.exampleBad h4, .exampleGood h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.exampleBad p, .exampleGood p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-family: 'Courier New', monospace;
+}
+
+.exampleBad span, .exampleGood span {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.exampleTip {
+  font-size: 1.0625rem;
+  color: #001933;
+  opacity: 0.8;
+  line-height: 1.6;
+  padding: 20px;
+  background: rgba(0, 25, 51, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid #001933;
+}
+
+.exampleTip strong {
+  color: #001933;
+}
+
+/* CTA Section */
+.ctaSection {
+  width: 100%;
+  /* Increased padding for mobile */
+  padding: clamp(80px, 12vw, 110px) 20px;
+  background: linear-gradient(135deg, #001933 0%, #003366 100%);
+  color: white;
+}
+
+.ctaCard {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaCard h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.ctaCard p {
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.ctaActions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  padding: clamp(12px, 3vw, 16px) clamp(24px, 5vw, 32px);
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.btnPrimary {
+  background-color: #ffffff;
+  color: #001933;
+  border: 2px solid #ffffff;
+}
+
+.btnLarge {
+  padding: clamp(16px, 4vw, 20px) clamp(32px, 6vw, 48px);
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btnPrimary:hover {
+  background-color: #003366;
+  color: #ffffff;
+  border-color: #003366;
+}
+
+/* Enhanced Responsive Design with Better Mobile Spacing */
+@media (max-width: 768px) {
+  .articleContainer {
+    padding-top: 70px; /* Slightly less on mobile if nav is smaller */
+  }
+  
+  .heroSection {
+    padding: clamp(90px, 15vw, 140px) 20px clamp(50px, 8vw, 80px) 20px;
+    margin-top: -70px; /* Match container padding */
+  }
+  
+  .contentSection,
+  .mfaTypesSection,
+  .securitySection,
+  .bestPracticesSection,
+  .exampleSection,
+  .ctaSection {
+    /* Significantly increased mobile padding */
+    padding: clamp(60px, 10vw, 90px) 20px;
+  }
+  
+  .articleCard {
+    padding: 30px 20px;
+  }
+  
+  .securityLevel {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .securityLevel:hover {
+    transform: translateY(-5px);
+  }
+  
+  .practiceCard {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .practiceCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .examplesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaActions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .mfaTypesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .articleContainer {
+    padding-top: 60px; /* Even less for very small screens */
+  }
+  
+  .heroSection {
+    padding: clamp(100px, 18vw, 160px) 15px clamp(40px, 6vw, 60px) 15px;
+    margin-top: -60px; /* Match container padding */
+  }
+  
+  .contentSection,
+  .mfaTypesSection,
+  .securitySection,
+  .bestPracticesSection,
+  .exampleSection,
+  .ctaSection {
+    padding: clamp(50px, 8vw, 70px) 15px;
+  }
+  
+  .articleCard {
+    padding: 25px 15px;
+  }
+  
+  .mfaTypeCard,
+  .securityLevel,
+  .practiceCard,
+  .exampleCard {
+    padding: 20px;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Additional mobile optimizations */
+  .sectionHeader {
+    margin: 0 auto 30px auto;
+  }
+  
+  .contentBlock {
+    margin-bottom: 30px;
+  }
+  
+  .mfaTypesGrid {
+    gap: 16px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+  .articleContainer {
+    padding-top: 50px;
+  }
+  
+  .heroSection {
+    padding: 110px 10px 50px 10px;
+    margin-top: -50px;
+  }
+  
+  .contentSection,
+  .mfaTypesSection,
+  .securitySection,
+  .bestPracticesSection,
+  .exampleSection,
+  .ctaSection {
+    padding: 40px 10px;
+  }
+  
+  .articleCard {
+    padding: 20px 10px;
+  }
+  
+  .mfaTypeCard,
+  .securityLevel,
+  .practiceCard,
+  .exampleCard {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .articleContainer {
+    padding-top: 80px; /* Maintain consistent top padding */
+  }
+  
+  .heroSection {
+    padding: clamp(100px, 12vw, 140px) 20px clamp(60px, 10vw, 100px) 20px;
+    margin-top: -80px;
+  }
+  
+  .contentSection,
+  .mfaTypesSection,
+  .securitySection,
+  .bestPracticesSection,
+  .exampleSection,
+  .ctaSection {
+    padding: 80px 20px;
+  }
+  
+  .articleCard {
+    max-width: 1200px;
+  }
+}
+
+/* Focus states for accessibility */
+.btn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.btnPrimary:focus-visible {
+  outline: 2px solid #001933;
+  outline-offset: 2px;
+}
+
+/* Enhanced list styling */
+.contentBlock ul {
+  background-color: rgba(0, 25, 51, 0.02);
+  padding: 30px 30px 30px 50px;
+  border-radius: 12px;
+  border-left: 4px solid #001933;
+  margin: 25px 0;
+}
+
+.contentBlock li {
+  margin-bottom: 16px;
+  padding-left: 8px;
+  font-size: clamp(1.0625rem, 2vw, 1.125rem);
+  color: #001933;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.contentBlock li:last-child {
+  margin-bottom: 0;
+}
+
+.contentBlock li strong {
+  color: #001933;
+  font-weight: 600;
+}
+
+/* Warning and success styles */
+.warningText {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.successText {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Security badge styles */
+.securityBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #28a745;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* Safe area support for notched devices */
+@supports(padding: max(0px)) {
+  .heroSection,
+  .contentSection,
+  .mfaTypesSection,
+  .securitySection,
+  .bestPracticesSection,
+  .exampleSection,
+  .ctaSection {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+  
+  @media (max-width: 768px) {
+    .heroSection {
+      padding-top: max(clamp(90px, 15vw, 140px), env(safe-area-inset-top));
+    }
+  }
+}

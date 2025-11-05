@@ -88,16 +88,8 @@ const Footer = () => {
                   Username Checker
                 </Link>
               </li>
-              <li className={styles.listItem}>
-                <Link href="/create-free-username-and-password-with-accessvaulted-generator" className={styles.footerLink}>
-                  Security Audit
-                </Link>
-              </li>
-              <li className={styles.listItem}>
-                <Link href="/create-free-username-and-password-with-accessvaulted-generator" className={styles.footerLink}>
-                  Breach Detection
-                </Link>
-              </li>
+              
+              
             </ul>
           </div>
         </div>

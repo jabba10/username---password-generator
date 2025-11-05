@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/blog": "pages/blog.js",
+  "/common-password-mistakes-that-compromise-your-security": "pages/common-password-mistakes-that-compromise-your-security.js",
+  "/multi-factor-authentication-the-perfect-companion-to-strong-passwords": "pages/multi-factor-authentication-the-perfect-companion-to-strong-passwords.js",
+  "/the-future-of-passwords-biometrics-and-beyond": "pages/the-future-of-passwords-biometrics-and-beyond.js"
 }
