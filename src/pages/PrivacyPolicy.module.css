@@ -3,11 +3,12 @@
 .privacyContainer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 20px 40px; /* Increased top padding to ensure visibility below navbar */
+  padding: 100px 20px 40px; /* Significantly increased top padding */
   min-height: 100vh;
   display: flex;
-  align-items: flex-start; /* Changed from center to flex-start for better positioning */
+  align-items: flex-start;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .privacyCard {
@@ -18,7 +19,8 @@
   border: 1px solid rgba(0, 25, 51, 0.1);
   max-width: 800px;
   width: 100%;
-  margin-top: 2rem; /* Added margin for extra spacing */
+  margin-top: 0; /* Remove additional margin since we're using padding */
+  box-sizing: border-box;
 }
 
 .privacyTitle {
@@ -103,39 +105,33 @@
   box-shadow: 0 4px 12px rgba(0, 25, 51, 0.2);
 }
 
-/* Responsive Design - Enhanced for all screen sizes */
+/* Responsive Design - Enhanced for all screen sizes with more top padding */
 
 @media (max-width: 1200px) {
   .privacyContainer {
-    padding: 70px 20px 35px;
+    padding: 90px 20px 35px;
   }
 }
 
 @media (max-width: 1024px) {
   .privacyContainer {
-    padding: 65px 18px 30px;
-  }
-  
-  .privacyCard {
-    margin-top: 1.5rem;
+    padding: 85px 18px 30px;
   }
 }
 
 @media (max-width: 900px) {
   .privacyContainer {
-    padding: 60px 16px 25px;
+    padding: 80px 16px 25px;
   }
 }
 
 @media (max-width: 768px) {
   .privacyContainer {
-    padding: 55px 16px 20px;
-    align-items: flex-start;
+    padding: 75px 16px 20px;
   }
 
   .privacyCard {
     padding: 40px 24px;
-    margin-top: 1rem;
   }
 
   .privacyTitle {
@@ -167,22 +163,17 @@
 
 @media (max-width: 600px) {
   .privacyContainer {
-    padding: 50px 14px 16px;
-  }
-  
-  .privacyCard {
-    margin-top: 0.5rem;
+    padding: 70px 14px 16px; /* Increased top padding for mobile */
   }
 }
 
 @media (max-width: 480px) {
   .privacyContainer {
-    padding: 45px 12px 12px;
+    padding: 65px 12px 12px; /* Further increased top padding */
   }
 
   .privacyCard {
     padding: 32px 20px;
-    margin-top: 0;
   }
 
   .privacyTitle {
@@ -214,7 +205,7 @@
 
 @media (max-width: 375px) {
   .privacyContainer {
-    padding: 40px 10px 10px;
+    padding: 60px 10px 10px; /* Even more top padding for small phones */
   }
   
   .privacyCard {
@@ -228,7 +219,7 @@
 
 @media (max-width: 320px) {
   .privacyContainer {
-    padding: 35px 8px 8px;
+    padding: 55px 8px 8px; /* Maximum top padding for very small screens */
   }
   
   .privacyCard {
@@ -236,14 +227,31 @@
   }
 }
 
-/* Extra small height devices */
-@media (max-height: 600px) {
+/* Extra small height devices and portrait mode */
+@media (max-height: 700px) and (max-width: 768px) {
   .privacyContainer {
-    padding-top: 60px;
-    align-items: flex-start;
+    padding-top: 80px;
+    min-height: calc(100vh - 60px); /* Adjust min-height for very short screens */
+  }
+}
+
+/* Landscape mode on mobile devices */
+@media (max-height: 500px) and (orientation: landscape) {
+  .privacyContainer {
+    padding-top: 70px;
+    min-height: auto;
   }
   
   .privacyCard {
-    margin-top: 1rem;
+    padding: 30px 20px;
+    margin: 10px 0;
+  }
+}
+
+/* Ensure content is never hidden by navbar */
+@media (max-width: 480px) {
+  .privacyContainer {
+    /* Force visibility with important if needed */
+    padding-top: 70px !important;
   }
 }
