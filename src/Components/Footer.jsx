@@ -6,11 +6,11 @@ const Footer = () => {
   const quickLinks = [
     { name: 'Username & Password Generator', link: '/create-free-username-and-password-with-accessvaulted-generator' },
     { name: 'Security Blog', link: '/blog' },
-    { name: 'Contact Us', link: '/contact' }
+    { name: 'Contact Us', link: '/contact-us' }
   ];
 
   const companyLinks = [
-    { name: 'About Us', link: '/about' },
+    { name: 'About Us', link: '/about-us' },
     { name: 'Privacy Policy', link: '/privacy-policy' },
   ];
 
