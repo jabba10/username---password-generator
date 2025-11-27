@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/blog": "pages/blog.js",
-  "/the-importance-of-strong-passwords-in-cybersecurity": "pages/the-importance-of-strong-passwords-in-cybersecurity.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/the-importance-of-strong-passwords-in-cybersecurity": "pages/the-importance-of-strong-passwords-in-cybersecurity.js"
 }
