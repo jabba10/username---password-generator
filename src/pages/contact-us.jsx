@@ -230,8 +230,6 @@ const ContactPage = () => {
               </form>
             </div>
 
-            {/* Contact Info Card */}
-            
           </div>
         </section>
 

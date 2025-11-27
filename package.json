@@ -18,13 +18,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    
     "dev": "next dev",
-    "build": "next build && next-sitemap",
+    "build": "next build",
     "start": "next start",
-    "export": "next build && next export",
-    "preview": "next build && next start"
-
+    "postbuild": "next-sitemap"
   },
   "eslintConfig": {
     "extends": [

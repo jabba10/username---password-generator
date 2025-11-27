@@ -1,1 +1,138 @@
-{"version":3,"caseSensitive":false,"basePath":"","rewrites":{"beforeFiles":[],"afterFiles":[],"fallback":[]},"redirects":[{"source":"/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/","destination":"/:file","permanent":true,"internal":true,"missing":[{"type":"header","key":"x-nextjs-data"}],"regex":"^(?:\\/((?!\\.well-known(?:\\/.*)?)(?:[^/]+\\/)*[^/]+\\.\\w+))\\/$"},{"source":"/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)","destination":"/:notfile/","permanent":true,"internal":true,"regex":"^(?:\\/((?!\\.well-known(?:\\/.*)?)(?:[^/]+\\/)*[^/\\.]+))$"}],"headers":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
+      "destination": "/:file",
+      "internal": true,
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-nextjs-data"
+        }
+      ],
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
+    },
+    {
+      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
+      "destination": "/:notfile/",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/404",
+      "regex": "^/404(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/404(?:/)?$"
+    },
+    {
+      "page": "/about-us",
+      "regex": "^/about\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\-us(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/common-password-mistakes-that-compromise-your-security",
+      "regex": "^/common\\-password\\-mistakes\\-that\\-compromise\\-your\\-security(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/common\\-password\\-mistakes\\-that\\-compromise\\-your\\-security(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/contact-us",
+      "regex": "^/contact\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact\\-us(?:/)?$"
+    },
+    {
+      "page": "/create-free-username-and-password-with-accessvaulted-generator",
+      "regex": "^/create\\-free\\-username\\-and\\-password\\-with\\-accessvaulted\\-generator(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/create\\-free\\-username\\-and\\-password\\-with\\-accessvaulted\\-generator(?:/)?$"
+    },
+    {
+      "page": "/multi-factor-authentication-the-perfect-companion-to-strong-passwords",
+      "regex": "^/multi\\-factor\\-authentication\\-the\\-perfect\\-companion\\-to\\-strong\\-passwords(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/multi\\-factor\\-authentication\\-the\\-perfect\\-companion\\-to\\-strong\\-passwords(?:/)?$"
+    },
+    {
+      "page": "/password-managers-vs-manual-creation-which-is-better",
+      "regex": "^/password\\-managers\\-vs\\-manual\\-creation\\-which\\-is\\-better(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/password\\-managers\\-vs\\-manual\\-creation\\-which\\-is\\-better(?:/)?$"
+    },
+    {
+      "page": "/password-strength-what-makes-a-password-truly-secure",
+      "regex": "^/password\\-strength\\-what\\-makes\\-a\\-password\\-truly\\-secure(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/password\\-strength\\-what\\-makes\\-a\\-password\\-truly\\-secure(?:/)?$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^/privacy\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy\\-policy(?:/)?$"
+    },
+    {
+      "page": "/the-future-of-passwords-biometrics-and-beyond",
+      "regex": "^/the\\-future\\-of\\-passwords\\-biometrics\\-and\\-beyond(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/the\\-future\\-of\\-passwords\\-biometrics\\-and\\-beyond(?:/)?$"
+    },
+    {
+      "page": "/the-importance-of-strong-passwords-in-cybersecurity",
+      "regex": "^/the\\-importance\\-of\\-strong\\-passwords\\-in\\-cybersecurity(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/the\\-importance\\-of\\-strong\\-passwords\\-in\\-cybersecurity(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

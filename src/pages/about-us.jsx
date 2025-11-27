@@ -14,7 +14,36 @@ const AboutUs = () => {
         />
         <meta
           name="keywords"
-          content="about password generator, username generator, free security tool, privacy-focused, offline password generator"
+          content="
+            /* Short Keywords */
+            password generator, username generator, password creator, username creator, secure passwords, strong passwords, random passwords, unique usernames, password maker, login generator,
+            
+            /* Cybersecurity Keywords */
+            cybersecurity, online security, digital security, internet security, account security, password security, credential security, data protection, privacy protection, secure login,
+            
+            /* Tool Specific Keywords */
+            free password generator, offline password tool, browser password generator, instant username generator, secure credential generator, password strength tool, username suggestions,
+            
+            /* Feature Keywords */
+            no data stored, works offline, privacy focused, zero tracking, local generation, client-side generation, secure randomization, custom passwords, password length, character types,
+            
+            /* Use Case Keywords */
+            email passwords, social media login, gaming accounts, work credentials, financial passwords, student accounts, online accounts, website login, app credentials, secure accounts,
+            
+            /* Long-Tail Keywords */
+            free secure password generator online, create strong username and password, generate random secure passwords, offline password generator tool, private username creation tool,
+            no signup password generator, instant secure credential creator, browser-based password tool, local password generation, secure login credential generator,
+            strong password creator free, unique username generator tool, cybersecurity password tool, privacy-focused credential generator, account security password maker,
+            how to create secure passwords, best free password generator, secure username password combo, generate unbreakable passwords, create hack-proof credentials,
+            online security password tool, digital identity protection, secure password for websites, random password generator free, custom length password generator,
+            password generator with symbols, username generator with numbers, secure login details creator, free cybersecurity tool, protect online accounts password,
+            generate passwords without internet, private password creation, secure credential generator tool, strong password for social media, email account password generator,
+            gaming password creator, work account security tool, financial password generator, student login credential tool, mobile app password generator,
+            website account security, secure online identity, password management tool, credential security solution, digital protection generator,
+            instant secure password maker, free privacy tool, local browser password creator, secure random password, username password combination generator,
+            cyber threat protection, data breach prevention, account takeover protection, automated attack prevention, password reuse prevention,
+            secure digital footprint, online privacy tool, internet safety tool, web security generator, account credential protector
+          "
         />
         <meta name="author" content="AccessVaulted" />
         <meta name="robots" content="index, follow" />
@@ -42,6 +71,21 @@ const AboutUs = () => {
         {/* Canonical URL */}
         <link rel="canonical" href="https://www.accessvaulted.com/about" />
 
+        {/* Additional Meta Tags */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#1a365d" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        
+        {/* DC Metadata */}
+        <meta name="DC.title" content="About Our Free Username & Password Generator | AccessVaulted" />
+        <meta name="DC.creator" content="AccessVaulted" />
+        <meta name="DC.subject" content="Password Generator, Username Generator, Cybersecurity, Online Security, Privacy Tools" />
+        
+        {/* Verification Meta Tags */}
+        <meta name="google-site-verification" content="your-verification-code" />
+        <meta name="msvalidate.01" content="your-verification-code" />
+
         {/* Structured Data */}
         <script
           type="application/ld+json"
@@ -52,6 +96,24 @@ const AboutUs = () => {
               "name": "About AccessVaulted Password Generator",
               "url": "https://www.accessvaulted.com/about",
               "description": "Free, secure username and password generator that protects your digital identity with private, offline credential generation.",
+              "mainEntity": {
+                "@type": "WebApplication",
+                "name": "AccessVaulted Password Generator",
+                "applicationCategory": "SecurityApplication",
+                "operatingSystem": "Any",
+                "permissions": "browser",
+                "description": "Free online tool to generate secure usernames and passwords with complete privacy protection.",
+                "featureList": [
+                  "No data storage",
+                  "Works offline",
+                  "Secure randomization",
+                  "Custom password length",
+                  "Multiple character types",
+                  "Instant generation",
+                  "Copy to clipboard"
+                ],
+                "screenshot": "https://www.accessvaulted.com/images/generator-preview.jpg"
+              },
               "publisher": {
                 "@type": "Organization",
                 "name": "AccessVaulted",
@@ -59,7 +121,13 @@ const AboutUs = () => {
                   "@type": "ImageObject",
                   "url": "https://www.accessvaulted.com/images/logo.png"
                 }
-              }
+              },
+              "keywords": [
+                "password generator", "username generator", "cybersecurity tool", "online security", 
+                "privacy protection", "free password creator", "secure login generator", "offline password tool",
+                "random password generator", "unique username creator", "account security", "digital protection",
+                "data breach prevention", "secure credentials", "password strength", "login security"
+              ]
             })
           }}
         />

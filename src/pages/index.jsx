@@ -15,10 +15,75 @@ const HomePage = () => {
         />
         <meta
           name="keywords"
-          content="password strength checker, username security test, free password tester, breach check, secure credentials, digital identity protection"
+          content="
+            /* Short Keywords */
+            password, username, security, cybersecurity, checker, tester, generator, 
+            strong, secure, free, online, tool, test, check, analysis, strength, 
+            weak, strong, breach, hacked, compromised, protection, safety, privacy,
+            digital, identity, credentials, login, account, authentication, access,
+            vault, manager, create, generate, make, build, form, creator, builder,
+
+            /* Single Keywords */
+            password-checker, username-checker, security-check, breach-check, 
+            password-test, username-test, security-score, password-score, 
+            username-security, password-security, credential-check, login-security,
+            account-security, authentication-security, access-security, 
+            password-generator, username-generator, credential-generator,
+            password-creator, username-creator, secure-generator, random-generator,
+            strong-password, secure-username, unique-username, complex-password,
+            password-strength, username-strength, credential-strength,
+
+            /* Medium Tail Keywords */
+            password strength checker, username security test, free password tester, 
+            breach check, secure credentials, digital identity protection,
+            strong password generator, secure username creator, free security check,
+            online password test, username vulnerability test, password security analysis,
+            credential strength test, login security checker, account protection tool,
+            data breach checker, hacked password test, compromised username check,
+            cybersecurity analysis tool, digital protection service, identity security,
+            password pattern recognition, security scoring system, breach protection,
+            password recommendations, username suggestions, security best practices,
+
+            /* Long Tail Keywords */
+            free password strength checker online, secure username generator tool,
+            test password security before using, check username vulnerability free,
+            strong password creator with security score, best username generator secure,
+            cybersecurity password analysis tool, digital identity protection service,
+            how to check if password is strong, test username security before registration,
+            free online credential strength tester, password breach detection tool,
+            username compromise checker free, create secure passwords and usernames,
+            password pattern recognition security, get security score for credentials,
+            protect against data breaches tool, cybersecurity recommendations passwords,
+            generate strong unique usernames free, test login credentials security,
+            password security best practices checker, username creation security tips,
+            free digital identity protection tool, online account security checker,
+            prevent credential stuffing attacks, secure authentication credential generator,
+
+            /* Specific Tool Keywords */
+            AccessVaulted password tool, AccessVaulted username generator,
+            AccessVaulted security checker, AccessVaulted breach detection,
+            AccessVaulted credential analyzer, AccessVaulted pattern recognition,
+            AccessVaulted security scoring, AccessVaulted recommendations,
+            AccessVaulted password creator, AccessVaulted username builder,
+
+            /* Industry Terms */
+            cybersecurity tools, digital security, online protection, 
+            identity management, credential security, authentication security,
+            access management, password management, username security,
+            data protection, privacy tools, security assessment,
+            vulnerability assessment, risk analysis, threat detection,
+
+            /* Action Keywords */
+            check password now, test username free, generate secure credentials,
+            create strong password, make secure username, analyze credential security,
+            get security score, receive recommendations, improve password strength,
+            enhance username security, protect digital identity, secure online accounts,
+            prevent hacking attempts, avoid data breaches, strengthen login credentials
+          "
         />
         <meta name="author" content="AccessVaulted" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Open Graph / Social Sharing */}
         <meta property="og:title" content="Free Password & Username Security Checker | AccessVaulted" />
@@ -45,6 +110,12 @@ const HomePage = () => {
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://www.accessvaulted.com/" />
+
+        {/* Additional SEO Meta Tags */}
+        <meta name="theme-color" content="#1a365d" />
+        <meta name="msapplication-TileColor" content="#1a365d" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
         {/* Preload critical image or font if needed */}
         {/* <link rel="preload" as="image" href="/images/security-check-preview.jpg" /> */}
@@ -94,8 +165,54 @@ const HomePage = () => {
                       "@type": "Answer",
                       "text": "Yes. Our system checks your username against known breach databases to see if it's been exposed in past data leaks."
                     }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How can I generate a secure password?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our password generator creates strong, unique passwords using advanced algorithms that combine length, complexity, and randomness for maximum security."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What makes a username secure?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Secure usernames are unique, not easily guessable, don't contain personal information, and haven't been exposed in previous data breaches."
+                    }
                   }
                 ]
+              }
+            })
+          }}
+        />
+
+        {/* Additional Structured Data for Tool */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "AccessVaulted Security Checker",
+              "applicationCategory": "SecurityApplication",
+              "operatingSystem": "Web Browser",
+              "description": "Free password and username security checker tool",
+              "url": "https://www.accessvaulted.com/",
+              "author": {
+                "@type": "Organization",
+                "name": "AccessVaulted"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": "1250"
               }
             })
           }}

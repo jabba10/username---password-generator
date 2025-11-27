@@ -294,7 +294,7 @@
   padding-top: 24px;
 }
 
-.readMoreBtn {
+.articleCard .readMoreBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -313,12 +313,12 @@
   max-width: 200px;
 }
 
-.readMoreBtn:hover {
+.articleCard .readMoreBtn:hover {
   background-color: #003366;
   transform: translateY(-2px);
 }
 
-.quickLink {
+.articleCard .generateBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -337,78 +337,7 @@
   max-width: 200px;
 }
 
-.quickLink:hover {
-  background-color: rgba(0, 25, 51, 0.2);
-  transform: translateY(-2px);
-}
-
-.blogNavigation {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-  gap: 40px;
-  padding: clamp(30px, 4vw, 40px) clamp(20px, 3vw, 30px);
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 25, 51, 0.1);
-  border: 1px solid rgba(0, 25, 51, 0.1);
-  margin-top: 40px;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.navSection h3 {
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
-  font-weight: 600;
-  color: #001933;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.navLinks {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.navLink {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #001933;
-  text-decoration: none;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  border-bottom: 1px solid rgba(0, 25, 51, 0.1);
-  justify-content: center;
-}
-
-.navLink:hover {
-  color: #003366;
-  transform: translateX(8px);
-  border-bottom-color: #003366;
-}
-
-.topicLinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.topicLink {
-  background-color: rgba(0, 25, 51, 0.1);
-  color: #001933;
-  padding: 8px 16px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.topicLink:hover {
+.articleCard .generateBtn:hover {
   background-color: rgba(0, 25, 51, 0.2);
   transform: translateY(-2px);
 }
@@ -477,25 +406,11 @@
     gap: 12px;
   }
   
-  .readMoreBtn,
-  .quickLink {
+  .articleCard .readMoreBtn,
+  .articleCard .generateBtn {
     width: 100%;
     max-width: 300px;
     min-width: auto;
-  }
-  
-  .blogNavigation {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 30px 20px;
-  }
-  
-  .navLinks {
-    align-items: center;
-  }
-  
-  .topicLinks {
-    justify-content: center;
   }
 }
 
@@ -520,10 +435,6 @@
     padding: 25px 15px;
   }
   
-  .blogNavigation {
-    padding: 25px 15px;
-  }
-  
   .primaryBtn,
   .secondaryBtn {
     padding: 14px 32px;
@@ -535,8 +446,8 @@
     gap: 10px;
   }
   
-  .readMoreBtn,
-  .quickLink {
+  .articleCard .readMoreBtn,
+  .articleCard .generateBtn {
     width: 100%;
     max-width: 100%;
     padding: 12px 20px;
@@ -551,12 +462,12 @@
   
   .blogHeader,
   .featuredArticle,
-  .articleCard,
-  .blogNavigation {
+  .articleCard {
     padding: 20px 10px;
   }
   
-  .btn {
+  .primaryBtn,
+  .secondaryBtn {
     padding: 10px 20px;
     font-size: 0.875rem;
   }
@@ -566,8 +477,8 @@
     gap: 8px;
   }
   
-  .readMoreBtn,
-  .quickLink {
+  .articleCard .readMoreBtn,
+  .articleCard .generateBtn {
     width: 100%;
     padding: 10px 16px;
     font-size: 0.8rem;
@@ -585,8 +496,8 @@
     gap: 16px;
   }
   
-  .readMoreBtn,
-  .quickLink {
+  .articleCard .readMoreBtn,
+  .articleCard .generateBtn {
     flex: 0 1 auto;
     min-width: 140px;
   }
@@ -609,10 +520,7 @@
   .secondaryBtn,
   .readMoreBtn,
   .generateBtn,
-  .quickLink,
   .articleCard,
-  .navLink,
-  .topicLink,
   .tag {
     transition: none;
     transform: none;
@@ -651,7 +559,6 @@
 
 /* Consistent button sizing and spacing */
 .readMoreBtn,
-.quickLink,
 .generateBtn {
   display: inline-flex;
   align-items: center;
@@ -668,7 +575,6 @@
   }
   
   .readMoreBtn,
-  .quickLink,
   .generateBtn {
     width: 100%;
     max-width: 280px;
@@ -682,8 +588,8 @@
     justify-content: center;
   }
   
-  .readMoreBtn,
-  .quickLink {
+  .articleCard .readMoreBtn,
+  .articleCard .generateBtn {
     flex: 0 1 auto;
     min-width: 140px;
   }
