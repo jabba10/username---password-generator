@@ -2,18 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html",
-  "/about-us": "pages/about-us.html",
-  "/blog": "pages/blog.html",
-  "/common-password-mistakes-that-compromise-your-security": "pages/common-password-mistakes-that-compromise-your-security.html",
-  "/contact-us": "pages/contact-us.html",
-  "/contact": "pages/contact.html",
-  "/create-free-username-and-password-with-accessvaulted-generator": "pages/create-free-username-and-password-with-accessvaulted-generator.html",
-  "/": "pages/index.html",
-  "/multi-factor-authentication-the-perfect-companion-to-strong-passwords": "pages/multi-factor-authentication-the-perfect-companion-to-strong-passwords.html",
-  "/password-managers-vs-manual-creation-which-is-better": "pages/password-managers-vs-manual-creation-which-is-better.html",
-  "/password-strength-what-makes-a-password-truly-secure": "pages/password-strength-what-makes-a-password-truly-secure.html",
-  "/privacy-policy": "pages/privacy-policy.html",
-  "/the-future-of-passwords-biometrics-and-beyond": "pages/the-future-of-passwords-biometrics-and-beyond.html",
-  "/the-importance-of-strong-passwords-in-cybersecurity": "pages/the-importance-of-strong-passwords-in-cybersecurity.html"
+  "/blog": "pages/blog.js",
+  "/the-importance-of-strong-passwords-in-cybersecurity": "pages/the-importance-of-strong-passwords-in-cybersecurity.js",
+  "/": "pages/index.js"
 }
