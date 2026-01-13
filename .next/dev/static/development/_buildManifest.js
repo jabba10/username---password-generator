@@ -2,14 +2,11 @@ self.__BUILD_MANIFEST = {
   "/": [
     "static/chunks/pages/index.js"
   ],
-  "/404": [
-    "static/chunks/pages/404.js"
+  "/_error": [
+    "static/chunks/pages/_error.js"
   ],
-  "/about-us": [
-    "static/chunks/pages/about-us.js"
-  ],
-  "/contact-us": [
-    "static/chunks/pages/contact-us.js"
+  "/blog": [
+    "static/chunks/pages/blog.js"
   ],
   "/create-free-username-and-password-with-accessvaulted-generator": [
     "static/chunks/pages/create-free-username-and-password-with-accessvaulted-generator.js"

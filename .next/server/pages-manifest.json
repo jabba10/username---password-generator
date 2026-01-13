@@ -4,7 +4,7 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/about-us": "pages/about-us.html",
+  "/about-us": "pages/about-us.js",
   "/ai-generated-phishing-emails-2026": "pages/ai-generated-phishing-emails-2026.js",
   "/blog": "pages/blog.js",
   "/common-password-mistakes-that-compromise-your-security": "pages/common-password-mistakes-that-compromise-your-security.js",

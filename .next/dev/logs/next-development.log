@@ -1,17 +1,70 @@
-[00:00:01.425] Server  LOG     ✓ Ready in 937ms
-[00:00:05.293] Server  ERROR   Invalid DOM property `hreflang`. Did you mean `hrefLang`?
-[00:00:05.663] Server  WARN    ⚠ Cross origin request detected from 192.168.19.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:04.091] Server  LOG     ✓ Ready in 2.9s
+[00:00:09.000] Server  WARN    ⚠ Cross origin request detected from 192.168.19.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:17:09.303] Server  LOG     ✓ Compiled in 100ms
-[00:39:41.585] Server  LOG     ✓ Compiled in 17ms
-[00:40:20.682] Server  LOG     ✓ Compiled in 74ms
-[00:48:12.578] Server  LOG     ✓ Compiled in 19ms
-[00:58:16.075] Server  LOG     ✓ Compiled in 19ms
-[01:05:16.278] Server  LOG     ✓ Compiled in 49ms
-[01:16:54.433] Server  LOG     ✓ Compiled in 37ms
-[01:42:58.154] Server  LOG     ✓ Compiled in 54ms
-[01:44:00.786] Server  LOG     ✓ Compiled in 45ms
-[01:45:09.214] Server  LOG     ✓ Compiled in 12ms
-[01:57:54.976] Server  LOG     ✓ Compiled in 54ms
-[01:59:02.305] Server  LOG     ✓ Compiled in 76ms
-[02:19:16.513] Server  LOG     ✓ Compiled in 39ms
+[00:00:09.027] Browser ERROR   uncaughtError: Error: ./timezone/src/pages/HomePage.module.css
+Transforming CSS failed
+Selector "*" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Browser:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+
+  SSR:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+
+
+[00:00:09.258] Browser ERROR   ./timezone/src/pages/HomePage.module.css
+Transforming CSS failed
+Selector "*" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Browser:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+
+  SSR:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+[00:00:09.777] Browser ERROR   ./timezone/src/pages/HomePage.module.css
+Transforming CSS failed
+Selector "*" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Browser:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+
+  SSR:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+[00:04:47.173] Server  LOG     ✓ Compiled in 49ms
+[00:04:47.647] Browser ERROR   ./timezone/src/pages/HomePage.module.css
+Transforming CSS failed
+Selector "*" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Browser:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+
+  SSR:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+[00:04:53.411] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:11:04.647] Server  LOG     ✓ Compiled in 103ms
+[00:11:05.659] Browser ERROR   ./timezone/src/pages/HomePage.module.css
+Transforming CSS failed
+Selector "*" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Browser:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+
+  SSR:
+    ./timezone/src/pages/HomePage.module.css
+    ./timezone/src/pages/index.js
+[00:16:50.723] Server  LOG     ✓ Compiled in 55ms
+[00:24:42.569] Server  LOG     ✓ Compiled in 155ms

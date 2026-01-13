@@ -169,47 +169,51 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/index\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/index\\.json$"
+    },
+    {
+      "page": "/about-us",
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/about-us\\.json$"
     },
     {
       "page": "/ai-generated-phishing-emails-2026",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/ai-generated-phishing-emails-2026\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/ai-generated-phishing-emails-2026\\.json$"
     },
     {
       "page": "/blog",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/blog\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/blog\\.json$"
     },
     {
       "page": "/common-password-mistakes-that-compromise-your-security",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/common-password-mistakes-that-compromise-your-security\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/common-password-mistakes-that-compromise-your-security\\.json$"
     },
     {
       "page": "/deepfake-voice-scams-2026",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/deepfake-voice-scams-2026\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/deepfake-voice-scams-2026\\.json$"
     },
     {
       "page": "/multi-factor-authentication-the-perfect-companion-to-strong-passwords",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/multi-factor-authentication-the-perfect-companion-to-strong-passwords\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/multi-factor-authentication-the-perfect-companion-to-strong-passwords\\.json$"
     },
     {
       "page": "/password-managers-vs-manual-creation-which-is-better",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/password-managers-vs-manual-creation-which-is-better\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/password-managers-vs-manual-creation-which-is-better\\.json$"
     },
     {
       "page": "/password-strength-what-makes-a-password-truly-secure",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/password-strength-what-makes-a-password-truly-secure\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/password-strength-what-makes-a-password-truly-secure\\.json$"
     },
     {
       "page": "/the-future-of-passwords-biometrics-and-beyond",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/the-future-of-passwords-biometrics-and-beyond\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/the-future-of-passwords-biometrics-and-beyond\\.json$"
     },
     {
       "page": "/the-importance-of-strong-passwords-in-cybersecurity",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/the-importance-of-strong-passwords-in-cybersecurity\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/the-importance-of-strong-passwords-in-cybersecurity\\.json$"
     },
     {
       "page": "/worst-passwords-of-all-time",
-      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/worst-passwords-of-all-time\\.json$"
+      "dataRouteRegex": "^/_next/data/8EiEvGqjvBsZmsvz0rBRk/worst-passwords-of-all-time\\.json$"
     }
   ],
   "rsc": {

@@ -1,6 +1,6 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "static/chunks/9d257c0f58d58b17.js"
+    "static/chunks/7d03561f04ca0cf2.js"
   ],
   "/404": [
     "static/chunks/8d82c332ef3863b9.js"
@@ -9,7 +9,7 @@ self.__BUILD_MANIFEST = {
     "static/chunks/9db5b0f498e32d2f.js"
   ],
   "/about-us": [
-    "static/chunks/2ddf9d5903c28eac.js"
+    "static/chunks/5106991b2621a175.js"
   ],
   "/ai-generated-phishing-emails-2026": [
     "static/chunks/4b51e016c5f10233.js"
