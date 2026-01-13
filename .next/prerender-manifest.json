@@ -1,11 +1,166 @@
 {
   "version": 4,
-  "routes": {},
+  "routes": {
+    "/ai-generated-phishing-emails-2026": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/ai-generated-phishing-emails-2026.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/common-password-mistakes-that-compromise-your-security": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/common-password-mistakes-that-compromise-your-security.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/index.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/deepfake-voice-scams-2026": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/deepfake-voice-scams-2026.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/blog": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/blog.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/multi-factor-authentication-the-perfect-companion-to-strong-passwords": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/multi-factor-authentication-the-perfect-companion-to-strong-passwords.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/the-importance-of-strong-passwords-in-cybersecurity": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/the-importance-of-strong-passwords-in-cybersecurity.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/password-managers-vs-manual-creation-which-is-better": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/password-managers-vs-manual-creation-which-is-better.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/worst-passwords-of-all-time": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/worst-passwords-of-all-time.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/the-future-of-passwords-biometrics-and-beyond": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/the-future-of-passwords-biometrics-and-beyond.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/password-strength-what-makes-a-password-truly-secure": {
+      "initialRevalidateSeconds": 86400,
+      "initialExpireSeconds": 31536000,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/aTF6zibnm5BMnZ9g_MhVD/password-strength-what-makes-a-password-truly-secure.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "dd92b66ae0a7081e76d950c31f5bec10",
-    "previewModeSigningKey": "df573b54631ea0687cccb4eccd6dd8b128c17fa3d936fa2be52b2e9487a0859f",
-    "previewModeEncryptionKey": "c703d806515f15b0217a63344f12344d5a547f34126eb4d5f8fd1f2e441990c0"
+    "previewModeId": "1d15d5163c1dca654e114e1741c23d0c",
+    "previewModeSigningKey": "5978decb05d54252a708a6540484a019fedf3eff6aca0c6fdff19c18b9c32345",
+    "previewModeEncryptionKey": "50a35f2bd3c9b54c2bf663b896e6bbca8b515f99b53210f28122e02f94d79f41"
   }
 }

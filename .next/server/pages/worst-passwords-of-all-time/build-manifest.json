@@ -1,0 +1,18 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/worst-passwords-of-all-time": [
+      "static/chunks/935ec1de23866172.js",
+      "static/chunks/875ebf3e880198f0.js",
+      "static/chunks/2abd6c09ed0a3529.js",
+      "static/chunks/af73ad87b54a7777.js",
+      "static/chunks/70bcd6ccf2ebcc17.css",
+      "static/chunks/turbopack-36a6c70aa6ea009f.js"
+    ]
+  },
+  "ampFirstPages": []
+}

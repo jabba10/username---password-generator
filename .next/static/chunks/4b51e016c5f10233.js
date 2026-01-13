@@ -1,0 +1,8 @@
+__turbopack_load_page_chunks__("/ai-generated-phishing-emails-2026", [
+  "static/chunks/84ff95e30a866568.js",
+  "static/chunks/875ebf3e880198f0.js",
+  "static/chunks/2abd6c09ed0a3529.js",
+  "static/chunks/af73ad87b54a7777.js",
+  "static/chunks/3f9d49bb2cfabe53.css",
+  "static/chunks/turbopack-88ea878f48b41648.js"
+])

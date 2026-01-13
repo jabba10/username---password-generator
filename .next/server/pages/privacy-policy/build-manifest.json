@@ -1,0 +1,18 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/privacy-policy": [
+      "static/chunks/8e720ce8fef98998.js",
+      "static/chunks/875ebf3e880198f0.js",
+      "static/chunks/2abd6c09ed0a3529.js",
+      "static/chunks/af73ad87b54a7777.js",
+      "static/chunks/22ca8e811c95c077.css",
+      "static/chunks/turbopack-d5a5f0307ce8ea2e.js"
+    ]
+  },
+  "ampFirstPages": []
+}

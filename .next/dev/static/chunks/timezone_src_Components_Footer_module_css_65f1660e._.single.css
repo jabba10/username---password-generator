@@ -1,0 +1,232 @@
+/* [project]/timezone/src/Components/Footer.module.css [client] (css) */
+.Footer-module__B384qW__footer {
+  background-color: #fff;
+  border-top: 1px solid #0019331a;
+  margin-top: auto;
+}
+
+.Footer-module__B384qW__footerContainer {
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+  display: grid;
+}
+
+.Footer-module__B384qW__footerBrand {
+  flex-direction: column;
+  display: flex;
+}
+
+.Footer-module__B384qW__logo {
+  color: #001933;
+  margin-bottom: 16px;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.Footer-module__B384qW__logo span {
+  color: #036;
+}
+
+.Footer-module__B384qW__brandDescription {
+  color: #001933;
+  opacity: .8;
+  margin-bottom: 24px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.Footer-module__B384qW__socialLinks {
+  gap: 12px;
+  display: flex;
+}
+
+.Footer-module__B384qW__socialLink {
+  background-color: #0019330d;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+}
+
+.Footer-module__B384qW__socialLink:hover {
+  background-color: #0019331a;
+  transform: translateY(-2px);
+}
+
+.Footer-module__B384qW__socialIcon {
+  font-size: 1.125rem;
+}
+
+.Footer-module__B384qW__footerLinks {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  display: grid;
+}
+
+.Footer-module__B384qW__linksColumn {
+  flex-direction: column;
+  display: flex;
+}
+
+.Footer-module__B384qW__columnTitle {
+  color: #001933;
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.Footer-module__B384qW__linksList {
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.Footer-module__B384qW__listItem {
+  display: flex;
+}
+
+.Footer-module__B384qW__footerLink {
+  color: #001933;
+  opacity: .8;
+  padding: 4px 0;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.Footer-module__B384qW__footerLink:hover {
+  opacity: 1;
+  color: #036;
+}
+
+.Footer-module__B384qW__footerBottom {
+  border-top: 1px solid #0019331a;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  display: flex;
+}
+
+.Footer-module__B384qW__copyright {
+  color: #001933;
+  opacity: .7;
+  font-size: .875rem;
+}
+
+.Footer-module__B384qW__legalLinks {
+  gap: 24px;
+  display: flex;
+}
+
+.Footer-module__B384qW__legalLink {
+  color: #001933;
+  opacity: .7;
+  font-size: .875rem;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.Footer-module__B384qW__legalLink:hover {
+  opacity: 1;
+  color: #036;
+}
+
+@media (max-width: 1024px) {
+  .Footer-module__B384qW__footerContainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .Footer-module__B384qW__footerLinks {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer-module__B384qW__footerContainer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 16px 32px;
+  }
+
+  .Footer-module__B384qW__footerLinks {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .Footer-module__B384qW__footerBottom {
+    text-align: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+  .Footer-module__B384qW__legalLinks {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer-module__B384qW__footerContainer {
+    gap: 24px;
+    padding: 32px 16px 24px;
+  }
+
+  .Footer-module__B384qW__footerLinks {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .Footer-module__B384qW__logo {
+    font-size: 1.5rem;
+  }
+
+  .Footer-module__B384qW__brandDescription {
+    font-size: .9rem;
+  }
+
+  .Footer-module__B384qW__columnTitle {
+    margin-bottom: 16px;
+    font-size: 1rem;
+  }
+
+  .Footer-module__B384qW__footerLink {
+    font-size: .9rem;
+  }
+
+  .Footer-module__B384qW__copyright {
+    font-size: .8rem;
+  }
+
+  .Footer-module__B384qW__legalLinks {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .Footer-module__B384qW__legalLink {
+    font-size: .8rem;
+  }
+
+  .Footer-module__B384qW__socialLink {
+    width: 36px;
+    height: 36px;
+  }
+
+  .Footer-module__B384qW__socialIcon {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=timezone_src_Components_Footer_module_css_65f1660e._.single.css.map*/

@@ -1,1 +1,232 @@
-{"version":3,"caseSensitive":false,"basePath":"","rewrites":{"beforeFiles":[],"afterFiles":[],"fallback":[]},"redirects":[{"source":"/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/","destination":"/:file","permanent":true,"internal":true,"missing":[{"type":"header","key":"x-nextjs-data"}],"regex":"^(?:\\/((?!\\.well-known(?:\\/.*)?)(?:[^/]+\\/)*[^/]+\\.\\w+))\\/$"},{"source":"/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)","destination":"/:notfile/","permanent":true,"internal":true,"regex":"^(?:\\/((?!\\.well-known(?:\\/.*)?)(?:[^/]+\\/)*[^/\\.]+))$"}],"headers":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "pages",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
+      "destination": "/:file",
+      "internal": true,
+      "priority": true,
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-nextjs-data"
+        }
+      ],
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
+    },
+    {
+      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
+      "destination": "/:notfile/",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ],
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    }
+  ],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/404",
+      "regex": "^/404(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/404(?:/)?$"
+    },
+    {
+      "page": "/about-us",
+      "regex": "^/about\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\-us(?:/)?$"
+    },
+    {
+      "page": "/ai-generated-phishing-emails-2026",
+      "regex": "^/ai\\-generated\\-phishing\\-emails\\-2026(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ai\\-generated\\-phishing\\-emails\\-2026(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/common-password-mistakes-that-compromise-your-security",
+      "regex": "^/common\\-password\\-mistakes\\-that\\-compromise\\-your\\-security(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/common\\-password\\-mistakes\\-that\\-compromise\\-your\\-security(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/contact-us",
+      "regex": "^/contact\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact\\-us(?:/)?$"
+    },
+    {
+      "page": "/create-free-username-and-password-with-accessvaulted-generator",
+      "regex": "^/create\\-free\\-username\\-and\\-password\\-with\\-accessvaulted\\-generator(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/create\\-free\\-username\\-and\\-password\\-with\\-accessvaulted\\-generator(?:/)?$"
+    },
+    {
+      "page": "/deepfake-voice-scams-2026",
+      "regex": "^/deepfake\\-voice\\-scams\\-2026(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/deepfake\\-voice\\-scams\\-2026(?:/)?$"
+    },
+    {
+      "page": "/multi-factor-authentication-the-perfect-companion-to-strong-passwords",
+      "regex": "^/multi\\-factor\\-authentication\\-the\\-perfect\\-companion\\-to\\-strong\\-passwords(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/multi\\-factor\\-authentication\\-the\\-perfect\\-companion\\-to\\-strong\\-passwords(?:/)?$"
+    },
+    {
+      "page": "/password-managers-vs-manual-creation-which-is-better",
+      "regex": "^/password\\-managers\\-vs\\-manual\\-creation\\-which\\-is\\-better(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/password\\-managers\\-vs\\-manual\\-creation\\-which\\-is\\-better(?:/)?$"
+    },
+    {
+      "page": "/password-strength-what-makes-a-password-truly-secure",
+      "regex": "^/password\\-strength\\-what\\-makes\\-a\\-password\\-truly\\-secure(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/password\\-strength\\-what\\-makes\\-a\\-password\\-truly\\-secure(?:/)?$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^/privacy\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy\\-policy(?:/)?$"
+    },
+    {
+      "page": "/the-future-of-passwords-biometrics-and-beyond",
+      "regex": "^/the\\-future\\-of\\-passwords\\-biometrics\\-and\\-beyond(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/the\\-future\\-of\\-passwords\\-biometrics\\-and\\-beyond(?:/)?$"
+    },
+    {
+      "page": "/the-importance-of-strong-passwords-in-cybersecurity",
+      "regex": "^/the\\-importance\\-of\\-strong\\-passwords\\-in\\-cybersecurity(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/the\\-importance\\-of\\-strong\\-passwords\\-in\\-cybersecurity(?:/)?$"
+    },
+    {
+      "page": "/worst-passwords-of-all-time",
+      "regex": "^/worst\\-passwords\\-of\\-all\\-time(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/worst\\-passwords\\-of\\-all\\-time(?:/)?$"
+    }
+  ],
+  "dataRoutes": [
+    {
+      "page": "/",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/index\\.json$"
+    },
+    {
+      "page": "/ai-generated-phishing-emails-2026",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/ai-generated-phishing-emails-2026\\.json$"
+    },
+    {
+      "page": "/blog",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/blog\\.json$"
+    },
+    {
+      "page": "/common-password-mistakes-that-compromise-your-security",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/common-password-mistakes-that-compromise-your-security\\.json$"
+    },
+    {
+      "page": "/deepfake-voice-scams-2026",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/deepfake-voice-scams-2026\\.json$"
+    },
+    {
+      "page": "/multi-factor-authentication-the-perfect-companion-to-strong-passwords",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/multi-factor-authentication-the-perfect-companion-to-strong-passwords\\.json$"
+    },
+    {
+      "page": "/password-managers-vs-manual-creation-which-is-better",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/password-managers-vs-manual-creation-which-is-better\\.json$"
+    },
+    {
+      "page": "/password-strength-what-makes-a-password-truly-secure",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/password-strength-what-makes-a-password-truly-secure\\.json$"
+    },
+    {
+      "page": "/the-future-of-passwords-biometrics-and-beyond",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/the-future-of-passwords-biometrics-and-beyond\\.json$"
+    },
+    {
+      "page": "/the-importance-of-strong-passwords-in-cybersecurity",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/the-importance-of-strong-passwords-in-cybersecurity\\.json$"
+    },
+    {
+      "page": "/worst-passwords-of-all-time",
+      "dataRouteRegex": "^/_next/data/aTF6zibnm5BMnZ9g_MhVD/worst-passwords-of-all-time\\.json$"
+    }
+  ],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

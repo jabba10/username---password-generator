@@ -1,81 +1,114 @@
-/* AboutUs.module.css */
+/* AboutUs.module.css - Fully Responsive Design */
 
+/* Root Variables */
+:root {
+  --primary-color: #001933;
+  --primary-light: #003366;
+  --text-color: #001933;
+  --text-secondary: rgba(0, 25, 51, 0.8);
+  --background-color: #ffffff;
+  --card-shadow: 0 4px 6px rgba(0, 25, 51, 0.1);
+  --card-shadow-hover: 0 8px 25px rgba(0, 25, 51, 0.15);
+  --border-color: rgba(0, 25, 51, 0.1);
+  --transition-speed: 0.3s ease;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+  --section-spacing: clamp(2rem, 6vw, 4rem);
+}
+
+/* Base Container */
 .aboutContainer {
-  max-width: 1200px;
+  max-width: min(1200px, 95vw);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--container-padding);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-/* Hero Section */
+/* Hero Section - FIXED: Title fully visible */
 .heroSection {
   text-align: center;
-  padding: 80px 20px;
-  background-color: #ffffff;
+  padding: clamp(80px, 12vh, 100px) var(--container-padding) clamp(60px, 10vh, 80px);
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e6f0ff 100%);
+  box-sizing: border-box;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
 }
 
 .heroContent {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: min(800px, 95vw);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .heroTitle {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.75rem, 5vw, 3rem);
   font-weight: 700;
-  color: #001933;
-  margin-bottom: 24px;
+  color: var(--text-color);
+  margin-top: clamp(0.5rem, 2vw, 1rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
   line-height: 1.2;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
+  padding-top: clamp(0.5rem, 1vw, 1rem);
 }
 
 .heroSubtitle {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: #001933;
-  margin-bottom: 40px;
+  font-size: clamp(0.9375rem, 2.5vw, 1.25rem);
+  color: var(--text-color);
+  margin-bottom: clamp(2rem, 4vw, 2.5rem);
   line-height: 1.6;
-  opacity: 0.8;
+  opacity: 0.9;
   text-align: center;
-  max-width: 600px;
+  max-width: min(800px, 90vw);
   margin-left: auto;
   margin-right: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Introduction Section */
 .introSection {
-  padding: 60px 20px;
-  background-color: #ffffff;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: clamp(2rem, 4vw, 3rem) var(--container-padding);
 }
 
 .sectionContent {
-  max-width: 800px;
+  max-width: min(800px, 95vw);
   margin: 0 auto;
   width: 100%;
 }
 
 .introText {
-  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
-  color: #001933;
+  font-size: clamp(0.9375rem, 2.5vw, 1.25rem);
+  color: var(--text-color);
   line-height: 1.7;
   text-align: center;
   opacity: 0.9;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-/* Section Header */
+/* Section Header - Common Styling */
 .sectionHeader {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -83,28 +116,34 @@
 }
 
 .sectionHeader h2 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 700;
-  color: #001933;
-  margin-bottom: 16px;
+  color: var(--text-color);
+  margin-bottom: clamp(0.75rem, 1.5vw, 1rem);
+  line-height: 1.2;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
 }
 
 .sectionSubtitle {
-  font-size: clamp(1rem, 2vw, 1.125rem);
-  color: #001933;
+  font-size: clamp(0.9375rem, 2vw, 1.125rem);
+  color: var(--text-color);
   opacity: 0.8;
   line-height: 1.6;
-  max-width: 600px;
+  max-width: min(700px, 90vw);
   margin: 0 auto;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Features Section */
 .featuresSection {
-  padding: 80px 20px;
-  background-color: #ffffff;
   width: 100%;
+  padding: var(--section-spacing) var(--container-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,60 +151,76 @@
 
 .featuresGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(20px, 3vw, 30px);
+  max-width: min(1200px, 95vw);
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .featureCard {
-  background-color: #ffffff;
-  padding: clamp(30px, 4vw, 40px) clamp(20px, 3vw, 30px);
+  background-color: var(--background-color);
+  padding: clamp(25px, 4vw, 40px) clamp(20px, 3vw, 30px);
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 25, 51, 0.1);
-  border: 1px solid rgba(0, 25, 51, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-speed);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
+  min-height: 280px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .featureCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.15);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .cardIcon {
-  font-size: clamp(2.5rem, 6vw, 3rem);
-  margin-bottom: 20px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: clamp(1rem, 2vw, 1.25rem);
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
 }
 
 .featureCard h3 {
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
   font-weight: 600;
-  color: #001933;
-  margin-bottom: 16px;
+  color: var(--text-color);
+  margin-bottom: clamp(0.75rem, 1.5vw, 1rem);
+  line-height: 1.4;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
 }
 
 .featureCard p {
-  color: #001933;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: var(--text-color);
   opacity: 0.8;
   line-height: 1.6;
-  margin-bottom: 24px;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   flex-grow: 1;
 }
 
 /* How It Works Section */
 .howItWorksSection {
-  padding: 80px 20px;
-  background-color: #ffffff;
   width: 100%;
+  padding: var(--section-spacing) var(--container-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,13 +228,13 @@
 
 .stepsContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: clamp(20px, 4vw, 40px);
-  max-width: 1000px;
+  gap: clamp(20px, 3vw, 40px);
+  max-width: min(900px, 95vw);
   margin: 0 auto;
-  width: 100%;
+  position: relative;
 }
 
 .step {
@@ -190,42 +245,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .stepNumber {
-  width: clamp(50px, 8vw, 60px);
-  height: clamp(50px, 8vw, 60px);
-  background-color: #001933;
+  width: clamp(48px, 8vw, 64px);
+  height: clamp(48px, 8vw, 64px);
+  background-color: var(--primary-color);
   color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 700;
-  margin: 0 auto 20px;
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
 }
 
 .step h3 {
-  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
   font-weight: 600;
-  color: #001933;
-  margin-bottom: 16px;
+  color: var(--text-color);
+  margin-bottom: clamp(0.75rem, 1.5vw, 1rem);
+  line-height: 1.4;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .step p {
-  color: #001933;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: var(--text-color);
   opacity: 0.8;
   line-height: 1.6;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .stepArrow {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  color: #001933;
-  opacity: 0.5;
-  margin-top: 30px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--text-color);
+  opacity: 0.3;
+  margin-top: clamp(32px, 6vw, 48px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,9 +296,8 @@
 
 /* Privacy Section */
 .privacySection {
-  padding: 80px 20px;
-  background-color: #ffffff;
   width: 100%;
+  padding: var(--section-spacing) var(--container-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,56 +306,67 @@
 .privacyGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  gap: clamp(20px, 3vw, 30px);
+  max-width: min(1200px, 95vw);
   margin: 0 auto;
   width: 100%;
 }
 
 .privacyCard {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding: clamp(25px, 3vw, 35px);
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 25, 51, 0.1);
-  border: 1px solid rgba(0, 25, 51, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-speed);
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: clamp(15px, 2vw, 20px);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .privacyCard:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 25, 51, 0.15);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .privacyIcon {
   font-size: clamp(1.5rem, 4vw, 2rem);
   flex-shrink: 0;
   margin-top: 4px;
+  min-width: 32px;
+}
+
+.privacyContent {
+  flex: 1;
+  min-width: 0; /* Prevents flex item overflow */
 }
 
 .privacyContent h3 {
   font-size: clamp(1.125rem, 2.5vw, 1.375rem);
   font-weight: 600;
-  color: #001933;
-  margin-bottom: 12px;
-  text-align: left;
+  color: var(--text-color);
+  margin-bottom: clamp(0.5rem, 1vw, 0.75rem);
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .privacyContent p {
-  color: #001933;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: var(--text-color);
   opacity: 0.8;
   line-height: 1.6;
-  text-align: left;
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Use Cases Section */
 .useCasesSection {
-  padding: 80px 20px;
-  background-color: #ffffff;
   width: 100%;
+  padding: var(--section-spacing) var(--container-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,93 +375,106 @@
 .useCasesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-  gap: 25px;
-  max-width: 1200px;
+  gap: clamp(20px, 3vw, 30px);
+  max-width: min(1200px, 95vw);
   margin: 0 auto;
   width: 100%;
 }
 
 .useCaseCard {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding: clamp(25px, 3vw, 35px);
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 25, 51, 0.1);
-  border: 1px solid rgba(0, 25, 51, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-speed);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .useCaseCard:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 25, 51, 0.15);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .useCaseCard h3 {
   font-size: clamp(1.125rem, 2.5vw, 1.375rem);
   font-weight: 600;
-  color: #001933;
-  margin-bottom: 12px;
-  text-align: left;
+  color: var(--text-color);
+  margin-bottom: clamp(0.5rem, 1vw, 0.75rem);
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .useCaseCard p {
-  color: #001933;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: var(--text-color);
   opacity: 0.8;
   line-height: 1.6;
-  text-align: left;
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Mission Section */
 .missionSection {
-  padding: 80px 20px;
-  background-color: #ffffff;
   width: 100%;
+  padding: var(--section-spacing) var(--container-padding);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .missionCard {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 40px);
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.1);
-  border: 1px solid rgba(0, 25, 51, 0.1);
-  max-width: 800px;
+  box-shadow: var(--card-shadow-hover);
+  border: 1px solid var(--border-color);
+  max-width: min(800px, 95vw);
   margin: 0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .missionCard h2 {
   font-size: clamp(1.625rem, 4vw, 2.25rem);
   font-weight: 700;
-  color: #001933;
-  margin-bottom: 24px;
+  color: var(--text-color);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.2;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
 }
 
 .missionCard p {
   font-size: clamp(1rem, 2vw, 1.125rem);
-  color: #001933;
+  color: var(--text-color);
   opacity: 0.8;
   line-height: 1.7;
-  margin-bottom: 40px;
-  max-width: 600px;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  max-width: min(600px, 90vw);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .missionStats {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: clamp(30px, 6vw, 60px);
-  max-width: 600px;
+  gap: clamp(20px, 4vw, 40px);
+  max-width: min(600px, 95vw);
   margin: 0 auto;
   width: 100%;
 }
@@ -396,66 +482,76 @@
 .missionStat {
   text-align: center;
   flex: 1;
-  min-width: 120px;
+  min-width: min(100px, 30vw);
 }
 
 .statNumber {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
-  color: #001933;
+  color: var(--text-color);
   margin-bottom: 8px;
+  line-height: 1;
 }
 
 .statLabel {
   font-size: clamp(0.875rem, 2vw, 1.125rem);
-  color: #001933;
+  color: var(--text-color);
   opacity: 0.8;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* CTA Section */
 .ctaSection {
-  padding: 80px 20px;
-  background-color: #ffffff;
   width: 100%;
+  padding: var(--section-spacing) var(--container-padding);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .ctaCard {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 40px);
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.1);
-  border: 1px solid rgba(0, 25, 51, 0.1);
-  max-width: 800px;
+  box-shadow: var(--card-shadow-hover);
+  border: 1px solid var(--border-color);
+  max-width: min(800px, 95vw);
   margin: 0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .ctaCard h2 {
   font-size: clamp(1.625rem, 4vw, 2.25rem);
   font-weight: 700;
-  color: #001933;
-  margin-bottom: 16px;
+  color: var(--text-color);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.2;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
 }
 
 .ctaCard p {
   font-size: clamp(1rem, 2vw, 1.125rem);
-  color: #001933;
+  color: var(--text-color);
   opacity: 0.8;
   line-height: 1.6;
-  margin-bottom: 32px;
-  max-width: 600px;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  max-width: min(600px, 90vw);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .ctaActions {
@@ -467,119 +563,114 @@
 /* Buttons */
 .btn {
   display: inline-flex;
-  padding: 12px 32px;
-  border-radius: 6px;
+  padding: clamp(12px, 3vw, 16px) clamp(24px, 4vw, 40px);
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  text-align: center;
-  transition: all 0.3s ease;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  transition: all var(--transition-speed);
   border: 2px solid transparent;
   justify-content: center;
   align-items: center;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  width: 100%;
+  max-width: min(400px, 90vw);
+  box-sizing: border-box;
 }
 
 .btnPrimary {
-  background-color: #001933;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
-.btnPrimary:hover {
-  background-color: #003366;
+.btnPrimary:hover,
+.btnPrimary:focus {
+  background-color: var(--primary-light);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 25, 51, 0.2);
 }
 
 .btnLarge {
-  padding: clamp(14px, 4vw, 16px) clamp(24px, 6vw, 40px);
-  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  padding: clamp(14px, 3vw, 18px) clamp(28px, 5vw, 48px);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
 }
 
-/* Responsive Design */
+/* Responsive Design - FIXED: Hero section adjustments */
 @media (max-width: 768px) {
   .aboutContainer {
-    padding: 0 16px;
+    padding: 0 clamp(12px, 3vw, 16px);
   }
   
   .heroSection {
-    padding: 60px 16px;
+    padding: clamp(70px, 10vh, 90px) clamp(12px, 3vw, 16px) clamp(50px, 8vh, 70px);
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
   }
   
-  .introSection,
-  .featuresSection,
-  .howItWorksSection,
-  .privacySection,
-  .useCasesSection,
-  .missionSection,
-  .ctaSection {
-    padding: 60px 16px;
-  }
-  
-  .featuresGrid,
-  .privacyGrid,
-  .useCasesGrid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .privacyCard {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-  
-  .privacyContent h3,
-  .privacyContent p {
-    text-align: center;
+  .heroTitle {
+    margin-top: clamp(0.25rem, 1vw, 0.5rem);
+    padding-top: clamp(0.25rem, 0.5vw, 0.5rem);
   }
   
   .stepsContainer {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: clamp(30px, 4vw, 40px);
   }
-  
+
   .stepArrow {
     transform: rotate(90deg);
     margin: 0;
   }
-  
+
+  .privacyCard {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .privacyIcon {
+    margin-top: 0;
+  }
+
+  .privacyContent h3,
+  .privacyContent p {
+    text-align: center;
+  }
+
   .missionStats {
     flex-direction: column;
-    gap: 30px;
+    gap: clamp(30px, 4vw, 40px);
   }
-  
+
   .missionStat {
     min-width: 100%;
   }
-  
+
   .ctaActions {
     flex-direction: column;
     align-items: center;
-  }
-  
-  .ctaActions .btn {
-    width: 100%;
-    max-width: 300px;
   }
 }
 
 @media (max-width: 480px) {
   .aboutContainer {
-    padding: 0 12px;
+    padding: 0 clamp(8px, 2vw, 12px);
   }
   
   .heroSection {
-    padding: 40px 12px;
+    padding: clamp(60px, 8vh, 80px) clamp(8px, 2vw, 12px) clamp(40px, 6vh, 60px);
   }
   
-  .introSection,
-  .featuresSection,
-  .howItWorksSection,
-  .privacySection,
-  .useCasesSection,
-  .missionSection,
-  .ctaSection {
-    padding: 40px 12px;
+  .heroTitle {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: clamp(1.5rem, 4vw, 1.75rem);
+  }
+  
+  .heroSubtitle {
+    font-size: clamp(0.875rem, 2vw, 1rem);
   }
   
   .featuresGrid,
@@ -587,25 +678,20 @@
   .useCasesGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .featureCard,
   .privacyCard,
   .useCaseCard {
-    padding: 25px 15px;
+    padding: clamp(20px, 3vw, 25px) clamp(16px, 2.5vw, 20px);
   }
-  
+
   .step {
-    padding: 0 10px;
+    padding: 0 clamp(8px, 1.5vw, 12px);
   }
-  
+
   .missionCard,
   .ctaCard {
-    padding: 30px 15px;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    font-size: 0.875rem;
+    padding: clamp(30px, 4vw, 40px) clamp(16px, 2.5vw, 20px);
   }
 }
 
@@ -615,21 +701,25 @@
     padding: 0 8px;
   }
   
-  .heroSection,
-  .introSection,
-  .featuresSection,
-  .howItWorksSection,
-  .privacySection,
-  .useCasesSection,
-  .missionSection,
-  .ctaSection {
-    padding: 30px 8px;
+  .heroSection {
+    padding: clamp(50px, 6vh, 70px) 8px clamp(30px, 4vh, 50px);
+  }
+  
+  .heroTitle {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    margin-top: 0;
+    padding-top: 0;
   }
   
   .featureCard,
   .privacyCard,
   .useCaseCard {
-    padding: 20px 10px;
+    padding: clamp(16px, 2vw, 20px) clamp(12px, 1.5vw, 16px);
+  }
+
+  .btn {
+    padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 24px);
+    font-size: clamp(0.8125rem, 1.5vw, 1rem);
   }
 }
 
@@ -638,15 +728,85 @@
   .aboutContainer {
     max-width: 1400px;
   }
+  
+  .heroSection {
+    padding: clamp(100px, 14vh, 120px) var(--container-padding) clamp(80px, 12vh, 100px);
+  }
 }
 
-/* Ensure full viewport height on mobile */
-@media (max-height: 700px) and (max-width: 768px) {
-  .heroSection {
-    padding: 40px 20px;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Ensure no text overflow */
+.heroTitle,
+.heroSubtitle,
+.introText,
+.sectionHeader h2,
+.sectionSubtitle,
+.featureCard h3,
+.featureCard p,
+.step h3,
+.step p,
+.privacyContent h3,
+.privacyContent p,
+.useCaseCard h3,
+.useCaseCard p,
+.missionCard h2,
+.missionCard p,
+.ctaCard h2,
+.ctaCard p,
+.statLabel,
+.btn {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Prevent all containers from overflowing */
+.aboutContainer,
+.heroSection,
+.featureCard,
+.privacyCard,
+.useCaseCard,
+.missionCard,
+.ctaCard {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure images and icons don't cause overflow */
+.cardIcon,
+.privacyIcon {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .featureCard:hover,
+  .privacyCard:hover,
+  .useCaseCard:hover {
+    transform: none;
+  }
+
+  .btn,
+  .btnPrimary {
+    min-height: 44px;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .featureCard,
+  .privacyCard,
+  .useCaseCard,
+  .btn,
+  .stepArrow {
+    transition: none;
+  }
+
+  .featureCard:hover,
+  .privacyCard:hover,
+  .useCaseCard:hover,
+  .btn:hover,
+  .btn:focus {
+    transform: none;
   }
 }

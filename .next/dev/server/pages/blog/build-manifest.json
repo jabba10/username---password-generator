@@ -1,0 +1,23 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/blog": [
+      "static/chunks/[root-of-the-server]__c932bdc8._.js",
+      "static/chunks/72699_next_dist_compiled_c949c8e8._.js",
+      "static/chunks/72699_next_dist_shared_lib_f545e0e1._.js",
+      "static/chunks/72699_next_dist_client_ab43317a._.js",
+      "static/chunks/72699_next_dist_95c514ac._.js",
+      "static/chunks/72699_next_058b20d1._.js",
+      "static/chunks/72699_react-dom_6385ceb8._.js",
+      "static/chunks/72699_470d1e73._.js",
+      "static/chunks/timezone_src_pages_BlogPage_module_33204d99.css",
+      "static/chunks/timezone_src_pages_blog_2da965e7._.js",
+      "static/chunks/turbopack-timezone_src_pages_blog_6df3b96e._.js"
+    ]
+  },
+  "ampFirstPages": []
+}

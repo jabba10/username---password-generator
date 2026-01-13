@@ -1,3 +1,4 @@
+/* Base Container */
 .articleContainer {
   min-height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -6,8 +7,8 @@
   align-items: center;
   padding: 0;
   width: 100%;
-  /* Critical: Add top padding to account for fixed navigation */
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 /* Hero Section */
@@ -15,102 +16,109 @@
   width: 100%;
   background: linear-gradient(135deg, #001933 0%, #003366 100%);
   color: white;
-  /* Increased top padding with safe area consideration */
   padding: clamp(100px, 15vw, 140px) 20px clamp(60px, 10vw, 100px) 20px;
   text-align: center;
-  /* Counteract container padding to maintain full-height background */
   margin-top: -80px;
+  box-sizing: border-box;
 }
 
 .heroContent {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .heroTitle {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   line-height: 1.2;
-  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .heroSubtitle {
-  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   opacity: 0.9;
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
+  word-wrap: break-word;
 }
 
 /* Content Sections */
 .contentSection {
   width: 100%;
-  /* Increased padding for better mobile spacing */
-  padding: clamp(60px, 10vw, 90px) 20px;
+  padding: clamp(40px, 8vw, 80px) 15px;
   background: #ffffff;
+  box-sizing: border-box;
 }
 
 .sectionHeader {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 30px auto;
+  padding: 0 15px;
 }
 
-.sectionHeader h2 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+.sectionHeaderTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
   color: #001933;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  line-height: 1.3;
 }
 
 .sectionSubtitle {
-  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
   color: #001933;
   opacity: 0.8;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
+/* Article Card */
 .articleCard {
   background: #ffffff;
-  padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 40px);
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0, 25, 51, 0.1);
+  padding: clamp(30px, 5vw, 50px) clamp(20px, 4vw, 30px);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 25, 51, 0.08);
   border: 1px solid rgba(0, 25, 51, 0.1);
-  max-width: 1000px;
+  max-width: min(1000px, 95vw);
   margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .articleContent {
   color: #001933;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .contentBlock {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .contentBlock:last-child {
   margin-bottom: 0;
 }
 
-.contentBlock h3 {
-  font-size: clamp(1.375rem, 3vw, 1.75rem);
+.contentBlockTitle {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   font-weight: 600;
   color: #001933;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 1.3;
 }
 
-.contentBlock p {
-  font-size: clamp(1.0625rem, 2vw, 1.125rem);
+.contentBlockText {
+  font-size: clamp(1rem, 1.8vw, 1.0625rem);
   color: #001933;
   opacity: 0.9;
-  margin-bottom: 16px;
-  line-height: 1.7;
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
-.contentBlock strong {
+.contentBlockStrong {
   color: #001933;
   font-weight: 600;
 }
@@ -118,61 +126,71 @@
 /* MFA Types Grid */
 .mfaTypesSection {
   width: 100%;
-  /* Increased padding for mobile */
-  padding: clamp(80px, 12vw, 110px) 20px;
+  padding: clamp(50px, 8vw, 80px) 15px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  box-sizing: border-box;
 }
 
 .mfaTypesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 20px;
+  max-width: min(1200px, 95vw);
   margin: 0 auto;
 }
 
 .mfaTypeCard {
   background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 25, 51, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 25, 51, 0.08);
   border: 1px solid rgba(0, 25, 51, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mfaTypeCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 25, 51, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 25, 51, 0.12);
 }
 
 .mfaIcon {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
-.mfaTypeCard h3 {
-  font-size: 1.375rem;
+.mfaTypeTitle {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
   font-weight: 600;
   color: #001933;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  word-wrap: break-word;
 }
 
-.mfaTypeCard p {
-  font-size: 1rem;
+.mfaTypeDescription {
+  font-size: clamp(0.9375rem, 1.6vw, 1rem);
   color: #001933;
   opacity: 0.8;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex-grow: 1;
 }
 
 .mfaSecurityLevel {
   display: inline-block;
-  padding: 6px 16px;
+  padding: 6px 12px;
   border-radius: 20px;
-  font-size: 0.875rem;
+  font-size: clamp(0.75rem, 1.2vw, 0.8125rem);
   font-weight: 600;
   text-transform: uppercase;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .securityHigh {
@@ -193,31 +211,33 @@
 /* Security Hierarchy Section */
 .securitySection {
   width: 100%;
-  /* Increased padding for mobile */
-  padding: clamp(80px, 12vw, 110px) 20px;
+  padding: clamp(50px, 8vw, 80px) 15px;
   background: #ffffff;
+  box-sizing: border-box;
 }
 
 .securityHierarchy {
-  max-width: 1000px;
+  max-width: min(1000px, 95vw);
   margin: 0 auto;
 }
 
 .securityLevel {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 15px;
   background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 25, 51, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 25, 51, 0.08);
   border: 1px solid rgba(0, 25, 51, 0.1);
   margin-bottom: 20px;
   transition: transform 0.3s ease;
+  box-sizing: border-box;
 }
 
 .securityLevel:hover {
-  transform: translateX(10px);
+  transform: translateY(-3px);
 }
 
 .securityLevel:last-child {
@@ -229,55 +249,61 @@
   font-weight: 700;
   color: #001933;
   min-width: 40px;
+  text-align: center;
 }
 
 .securityContent {
   flex: 1;
+  text-align: center;
 }
 
-.securityContent h3 {
-  font-size: 1.375rem;
+.securityContentTitle {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
   font-weight: 600;
   color: #001933;
   margin-bottom: 8px;
+  line-height: 1.3;
 }
 
-.securityContent p {
-  font-size: 1.0625rem;
+.securityContentText {
+  font-size: clamp(1rem, 1.6vw, 1.0625rem);
   color: #001933;
   opacity: 0.8;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
 }
 
 /* Best Practices Section */
 .bestPracticesSection {
   width: 100%;
-  /* Increased padding for mobile */
-  padding: clamp(80px, 12vw, 110px) 20px;
+  padding: clamp(50px, 8vw, 80px) 15px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  box-sizing: border-box;
 }
 
 .practicesContainer {
-  max-width: 1000px;
+  max-width: min(1000px, 95vw);
   margin: 0 auto;
 }
 
 .practiceCard {
   display: flex;
-  align-items: flex-start;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
   background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 25, 51, 0.08);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 25, 51, 0.08);
   border: 1px solid rgba(0, 25, 51, 0.1);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   transition: transform 0.3s ease;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .practiceCard:hover {
-  transform: translateX(10px);
+  transform: translateY(-3px);
 }
 
 .practiceCard:last-child {
@@ -285,7 +311,7 @@
 }
 
 .practiceIcon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   flex-shrink: 0;
 }
 
@@ -293,57 +319,61 @@
   flex: 1;
 }
 
-.practiceContent h3 {
-  font-size: 1.375rem;
+.practiceContentTitle {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
   font-weight: 600;
   color: #001933;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  line-height: 1.3;
 }
 
-.practiceContent p {
-  font-size: 1.0625rem;
+.practiceContentText {
+  font-size: clamp(1rem, 1.6vw, 1.0625rem);
   color: #001933;
   opacity: 0.8;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* Example Section */
 .exampleSection {
   width: 100%;
-  /* Increased padding for mobile */
-  padding: clamp(60px, 10vw, 90px) 20px;
+  padding: clamp(40px, 8vw, 60px) 15px;
   background: #ffffff;
+  box-sizing: border-box;
 }
 
 .exampleCard {
   background: #ffffff;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0, 25, 51, 0.1);
+  padding: clamp(25px, 4vw, 35px);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 25, 51, 0.1);
   border: 1px solid rgba(0, 25, 51, 0.1);
-  max-width: 800px;
+  max-width: min(800px, 95vw);
   margin: 0 auto;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.exampleCard h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+.exampleCardTitle {
+  font-size: clamp(1.375rem, 2.5vw, 1.75rem);
   font-weight: 600;
   color: #001933;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  line-height: 1.3;
 }
 
 .examplesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
 }
 
 .exampleBad, .exampleGood {
-  padding: 25px;
-  border-radius: 12px;
+  padding: 20px;
+  border-radius: 8px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .exampleBad {
@@ -356,92 +386,105 @@
   color: white;
 }
 
-.exampleBad h4, .exampleGood h4 {
-  font-size: 1.25rem;
+.exampleBadTitle, .exampleGoodTitle {
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  line-height: 1.3;
 }
 
-.exampleBad p, .exampleGood p {
-  font-size: 1.125rem;
+.exampleBadSubtitle, .exampleGoodSubtitle {
+  font-size: clamp(1rem, 1.8vw, 1.0625rem);
   font-weight: 600;
   margin-bottom: 8px;
   font-family: 'Courier New', monospace;
 }
 
-.exampleBad span, .exampleGood span {
-  font-size: 0.875rem;
+.exampleBadText, .exampleGoodText {
+  font-size: clamp(0.8125rem, 1.4vw, 0.875rem);
   opacity: 0.9;
+  display: block;
+  line-height: 1.4;
 }
 
 .exampleTip {
-  font-size: 1.0625rem;
+  font-size: clamp(1rem, 1.6vw, 1.0625rem);
   color: #001933;
   opacity: 0.8;
   line-height: 1.6;
-  padding: 20px;
+  padding: 15px;
   background: rgba(0, 25, 51, 0.05);
   border-radius: 8px;
   border-left: 4px solid #001933;
+  text-align: left;
+  margin: 0;
 }
 
-.exampleTip strong {
+.exampleTipStrong {
   color: #001933;
+  font-weight: 600;
 }
 
 /* CTA Section */
 .ctaSection {
   width: 100%;
-  /* Increased padding for mobile */
-  padding: clamp(80px, 12vw, 110px) 20px;
+  padding: clamp(50px, 8vw, 80px) 15px;
   background: linear-gradient(135deg, #001933 0%, #003366 100%);
   color: white;
+  box-sizing: border-box;
 }
 
 .ctaCard {
   text-align: center;
-  max-width: 600px;
+  max-width: min(600px, 95vw);
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-.ctaCard h2 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+.ctaCardTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: white;
+  line-height: 1.3;
 }
 
-.ctaCard p {
-  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+.ctaCardText {
+  font-size: clamp(1rem, 2vw, 1.125rem);
   opacity: 0.9;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  line-height: 1.5;
+  margin-bottom: 25px;
   color: white;
+  word-wrap: break-word;
 }
 
 .ctaActions {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 /* Buttons */
 .btn {
   display: inline-flex;
-  padding: clamp(12px, 3vw, 16px) clamp(24px, 5vw, 32px);
+  padding: clamp(12px, 2vw, 16px) clamp(24px, 3vw, 32px);
   background-color: transparent;
   color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  font-size: clamp(1rem, 1.8vw, 1.0625rem);
   transition: all 0.3s ease;
   border: 2px solid #ffffff;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
   text-align: center;
+  min-height: 44px;
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .btnPrimary {
@@ -451,8 +494,8 @@
 }
 
 .btnLarge {
-  padding: clamp(16px, 4vw, 20px) clamp(32px, 6vw, 48px);
-  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+  padding: clamp(16px, 2.5vw, 20px) clamp(32px, 4vw, 48px);
+  font-size: clamp(1.0625rem, 2vw, 1.125rem);
 }
 
 .btn:hover {
@@ -466,129 +509,110 @@
   border-color: #003366;
 }
 
-/* Enhanced Responsive Design with Better Mobile Spacing */
-@media (max-width: 768px) {
-  .articleContainer {
-    padding-top: 70px; /* Slightly less on mobile if nav is smaller */
+/* Strategy List */
+.strategyList {
+  background-color: rgba(0, 25, 51, 0.02);
+  padding: 20px 20px 20px 35px;
+  border-radius: 10px;
+  border-left: 4px solid #001933;
+  margin: 20px 0;
+  list-style-position: outside;
+}
+
+.strategyListItem {
+  margin-bottom: 12px;
+  padding-left: 8px;
+  font-size: clamp(1rem, 1.6vw, 1.0625rem);
+  color: #001933;
+  opacity: 0.9;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.strategyListItem:last-child {
+  margin-bottom: 0;
+}
+
+.strategyListItemStrong {
+  color: #001933;
+  font-weight: 600;
+}
+
+/* Text Utility Classes */
+.textBreak {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: clamp(2rem, 4vw, 3rem);
   }
   
-  .heroSection {
-    padding: clamp(90px, 15vw, 140px) 20px clamp(50px, 8vw, 80px) 20px;
-    margin-top: -70px; /* Match container padding */
+  .heroSubtitle {
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
   }
   
-  .contentSection,
-  .mfaTypesSection,
-  .securitySection,
-  .bestPracticesSection,
-  .exampleSection,
-  .ctaSection {
-    /* Significantly increased mobile padding */
-    padding: clamp(60px, 10vw, 90px) 20px;
+  .contentBlockTitle {
+    font-size: clamp(1.375rem, 2.5vw, 1.625rem);
   }
   
-  .articleCard {
-    padding: 30px 20px;
+  .contentBlockText {
+    font-size: clamp(1.0625rem, 1.8vw, 1.125rem);
   }
   
   .securityLevel {
-    flex-direction: column;
-    text-align: center;
-    gap: 16px;
+    flex-direction: row;
+    text-align: left;
+    gap: 20px;
   }
   
-  .securityLevel:hover {
-    transform: translateY(-5px);
+  .securityContent {
+    text-align: left;
   }
   
   .practiceCard {
-    flex-direction: column;
-    text-align: center;
-    gap: 16px;
-  }
-  
-  .practiceCard:hover {
-    transform: translateY(-5px);
-  }
-  
-  .examplesGrid {
-    grid-template-columns: 1fr;
-  }
-  
-  .ctaActions {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btn {
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .mfaTypesGrid {
-    grid-template-columns: 1fr;
+    flex-direction: row;
+    text-align: left;
     gap: 20px;
   }
-}
-
-@media (max-width: 480px) {
-  .articleContainer {
-    padding-top: 60px; /* Even less for very small screens */
+  
+  .practiceIcon {
+    font-size: 2.5rem;
   }
   
-  .heroSection {
-    padding: clamp(100px, 18vw, 160px) 15px clamp(40px, 6vw, 60px) 15px;
-    margin-top: -60px; /* Match container padding */
+  .practiceContentTitle {
+    font-size: clamp(1.25rem, 2vw, 1.375rem);
   }
   
-  .contentSection,
-  .mfaTypesSection,
-  .securitySection,
-  .bestPracticesSection,
-  .exampleSection,
-  .ctaSection {
-    padding: clamp(50px, 8vw, 70px) 15px;
-  }
-  
-  .articleCard {
-    padding: 25px 15px;
-  }
-  
-  .mfaTypeCard,
-  .securityLevel,
-  .practiceCard,
-  .exampleCard {
-    padding: 20px;
-  }
-  
-  .btn {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  /* Additional mobile optimizations */
-  .sectionHeader {
-    margin: 0 auto 30px auto;
-  }
-  
-  .contentBlock {
-    margin-bottom: 30px;
+  .practiceContentText {
+    font-size: clamp(1.0625rem, 1.6vw, 1.125rem);
   }
   
   .mfaTypesGrid {
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: 25px;
+  }
+  
+  .mfaTypeCard {
+    padding: 25px;
+    min-height: 300px;
+  }
+  
+  .mfaTypeTitle {
+    font-size: clamp(1.25rem, 2vw, 1.375rem);
+  }
+  
+  .mfaTypeDescription {
+    font-size: clamp(1rem, 1.6vw, 1.0625rem);
   }
 }
 
-/* Extra small devices */
-@media (max-width: 320px) {
-  .articleContainer {
-    padding-top: 50px;
-  }
-  
+@media (min-width: 1024px) {
   .heroSection {
-    padding: 110px 10px 50px 10px;
-    margin-top: -50px;
+    padding: clamp(120px, 15vw, 160px) 20px clamp(80px, 10vw, 120px) 20px;
   }
   
   .contentSection,
@@ -597,42 +621,19 @@
   .bestPracticesSection,
   .exampleSection,
   .ctaSection {
-    padding: 40px 10px;
+    padding: clamp(60px, 10vw, 100px) 20px;
   }
   
   .articleCard {
-    padding: 20px 10px;
+    padding: clamp(40px, 6vw, 60px) clamp(30px, 4vw, 50px);
   }
   
-  .mfaTypeCard,
-  .securityLevel,
-  .practiceCard,
-  .exampleCard {
-    padding: 15px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .articleContainer {
-    padding-top: 80px; /* Maintain consistent top padding */
+  .mfaTypesGrid {
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
   }
   
-  .heroSection {
-    padding: clamp(100px, 12vw, 140px) 20px clamp(60px, 10vw, 100px) 20px;
-    margin-top: -80px;
-  }
-  
-  .contentSection,
-  .mfaTypesSection,
-  .securitySection,
-  .bestPracticesSection,
-  .exampleSection,
-  .ctaSection {
-    padding: 80px 20px;
-  }
-  
-  .articleCard {
-    max-width: 1200px;
+  .btn {
+    font-size: clamp(1.0625rem, 1.8vw, 1.125rem);
   }
 }
 
@@ -647,54 +648,27 @@
   outline-offset: 2px;
 }
 
-/* Enhanced list styling */
-.contentBlock ul {
-  background-color: rgba(0, 25, 51, 0.02);
-  padding: 30px 30px 30px 50px;
-  border-radius: 12px;
-  border-left: 4px solid #001933;
-  margin: 25px 0;
-}
-
-.contentBlock li {
-  margin-bottom: 16px;
-  padding-left: 8px;
-  font-size: clamp(1.0625rem, 2vw, 1.125rem);
-  color: #001933;
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-.contentBlock li:last-child {
-  margin-bottom: 0;
-}
-
-.contentBlock li strong {
-  color: #001933;
-  font-weight: 600;
-}
-
-/* Warning and success styles */
-.warningText {
-  color: #dc3545;
-  font-weight: 600;
-}
-
-.successText {
-  color: #28a745;
-  font-weight: 600;
-}
-
-/* Security badge styles */
-.securityBadge {
-  display: inline-block;
-  padding: 4px 12px;
-  background: #28a745;
-  color: white;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-left: 8px;
+/* Print styles */
+@media print {
+  .articleContainer {
+    background: white !important;
+    padding-top: 0 !important;
+  }
+  
+  .heroSection {
+    background: white !important;
+    color: black !important;
+    margin-top: 0 !important;
+  }
+  
+  .ctaSection {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .btn {
+    display: none !important;
+  }
 }
 
 /* Safe area support for notched devices */
@@ -706,13 +680,34 @@
   .bestPracticesSection,
   .exampleSection,
   .ctaSection {
-    padding-left: max(20px, env(safe-area-inset-left));
-    padding-right: max(20px, env(safe-area-inset-right));
+    padding-left: max(15px, env(safe-area-inset-left));
+    padding-right: max(15px, env(safe-area-inset-right));
   }
   
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .heroSection {
-      padding-top: max(clamp(90px, 15vw, 140px), env(safe-area-inset-top));
+      padding-top: max(clamp(100px, 15vw, 140px), env(safe-area-inset-top));
     }
+  }
+}
+
+/* Ensure images and icons don't overflow */
+.mfaIcon,
+.practiceIcon {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  .btn {
+    min-height: 48px;
+    min-width: 44px;
+  }
+  
+  .mfaTypeCard,
+  .practiceCard,
+  .securityLevel {
+    min-height: 44px;
   }
 }

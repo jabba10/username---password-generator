@@ -1,8 +1,22 @@
 {
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/blog": "pages/blog.js",
   "/": "pages/index.js",
-  "/the-importance-of-strong-passwords-in-cybersecurity": "pages/the-importance-of-strong-passwords-in-cybersecurity.js"
+  "/404": "pages/404.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/about-us": "pages/about-us.html",
+  "/ai-generated-phishing-emails-2026": "pages/ai-generated-phishing-emails-2026.js",
+  "/blog": "pages/blog.js",
+  "/common-password-mistakes-that-compromise-your-security": "pages/common-password-mistakes-that-compromise-your-security.js",
+  "/contact": "pages/contact.html",
+  "/contact-us": "pages/contact-us.html",
+  "/create-free-username-and-password-with-accessvaulted-generator": "pages/create-free-username-and-password-with-accessvaulted-generator.html",
+  "/deepfake-voice-scams-2026": "pages/deepfake-voice-scams-2026.js",
+  "/multi-factor-authentication-the-perfect-companion-to-strong-passwords": "pages/multi-factor-authentication-the-perfect-companion-to-strong-passwords.js",
+  "/password-managers-vs-manual-creation-which-is-better": "pages/password-managers-vs-manual-creation-which-is-better.js",
+  "/password-strength-what-makes-a-password-truly-secure": "pages/password-strength-what-makes-a-password-truly-secure.js",
+  "/privacy-policy": "pages/privacy-policy.html",
+  "/the-future-of-passwords-biometrics-and-beyond": "pages/the-future-of-passwords-biometrics-and-beyond.js",
+  "/the-importance-of-strong-passwords-in-cybersecurity": "pages/the-importance-of-strong-passwords-in-cybersecurity.js",
+  "/worst-passwords-of-all-time": "pages/worst-passwords-of-all-time.js"
 }
