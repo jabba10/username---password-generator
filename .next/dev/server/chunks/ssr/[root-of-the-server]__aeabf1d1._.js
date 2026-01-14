@@ -210,7 +210,7 @@ const AboutUs = ({ currentDate, lastModifiedDate })=>{
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("link", {
                         rel: "canonical",
-                        href: "https://www.accessvaulted.com/about"
+                        href: "https://www.accessvaulted.com/about-us"
                     }, void 0, false, {
                         fileName: "[project]/timezone/src/pages/about-us.js",
                         lineNumber: 46,
@@ -303,7 +303,7 @@ const AboutUs = ({ currentDate, lastModifiedDate })=>{
                                 "@context": "https://schema.org",
                                 "@type": "AboutPage",
                                 "name": "About AccessVaulted Password Generator",
-                                "url": "https://www.accessvaulted.com/about",
+                                "url": "https://www.accessvaulted.com/about-us",
                                 "description": "Free, secure username and password generator that protects your digital identity with private, offline credential generation.",
                                 "datePublished": currentDate,
                                 "dateModified": lastModifiedDate,

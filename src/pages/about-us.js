@@ -28,7 +28,7 @@ const AboutUs = ({ currentDate, lastModifiedDate }) => {
           content="Generate unbreakable login credentials instantly — 100% free, secure, and private. Learn how our tool protects your digital identity."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.accessvaulted.com/about" />
+        <meta property="og:url" content="https://www.accessvaulted.com/about-us" />
         <meta property="og:image" content="https://www.accessvaulted.com/images/about-preview.jpg" />
         <meta property="og:site_name" content="AccessVaulted" />
         <meta property="og:updated_time" content={lastModifiedDate} />
@@ -43,7 +43,7 @@ const AboutUs = ({ currentDate, lastModifiedDate }) => {
         <meta name="twitter:image" content="https://www.accessvaulted.com/images/about-preview.jpg" />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://www.accessvaulted.com/about" />
+        <link rel="canonical" href="https://www.accessvaulted.com/about-us" />
 
         {/* Additional Meta Tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -69,7 +69,7 @@ const AboutUs = ({ currentDate, lastModifiedDate }) => {
               "@context": "https://schema.org",
               "@type": "AboutPage",
               "name": "About AccessVaulted Password Generator",
-              "url": "https://www.accessvaulted.com/about",
+              "url": "https://www.accessvaulted.com/about-us",
               "description": "Free, secure username and password generator that protects your digital identity with private, offline credential generation.",
               "datePublished": currentDate,
               "dateModified": lastModifiedDate,

@@ -609,7 +609,7 @@ const AboutUs = ({ currentDate, lastModifiedDate })=>{
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$timezone$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
                         property: "og:url",
-                        content: "https://www.accessvaulted.com/about"
+                        content: "https://www.accessvaulted.com/about-us"
                     }, void 0, false, {
                         fileName: "[project]/timezone/src/pages/about-us.js",
                         lineNumber: 31,
@@ -673,7 +673,7 @@ const AboutUs = ({ currentDate, lastModifiedDate })=>{
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$timezone$2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
                         rel: "canonical",
-                        href: "https://www.accessvaulted.com/about"
+                        href: "https://www.accessvaulted.com/about-us"
                     }, void 0, false, {
                         fileName: "[project]/timezone/src/pages/about-us.js",
                         lineNumber: 46,
@@ -766,7 +766,7 @@ const AboutUs = ({ currentDate, lastModifiedDate })=>{
                                 "@context": "https://schema.org",
                                 "@type": "AboutPage",
                                 "name": "About AccessVaulted Password Generator",
-                                "url": "https://www.accessvaulted.com/about",
+                                "url": "https://www.accessvaulted.com/about-us",
                                 "description": "Free, secure username and password generator that protects your digital identity with private, offline credential generation.",
                                 "datePublished": currentDate,
                                 "dateModified": lastModifiedDate,

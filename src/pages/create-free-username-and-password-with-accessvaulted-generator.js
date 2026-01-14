@@ -177,7 +177,7 @@ const PasswordGenerator = () => {
         />
         <meta name="author" content="AccessVaulted" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.accessvaulted.com/generator" />
+        <link rel="canonical" href="https://www.accessvaulted.com/create-free-username-and-password-with-accessvaulted-generator" />
 
         <meta property="og:title" content="Free Secure Password & Username Generator | AccessVaulted" />
         <meta
@@ -185,7 +185,7 @@ const PasswordGenerator = () => {
           content="Create unbreakable passwords and cyber-safe usernames in seconds. Free, fast, and fully private."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.accessvaulted.com/generator" />
+        <meta property="og:url" content="https://www.accessvaulted.com/create-free-username-and-password-with-accessvaulted-generator" />
         <meta property="og:image" content="https://www.accessvaulted.com/images/password-generator-preview.jpg" />
         <meta property="og:site_name" content="AccessVaulted" />
         <meta property="og:locale" content="en_US" />

@@ -153,7 +153,7 @@ const BlogPage = ({ currentDate, lastModifiedDate }) => {
             <Link href="/create-free-username-and-password-with-accessvaulted-generator" className={styles.primaryBtn}>
               Generate Secure Username & Password
             </Link>
-            <Link href="/about" className={styles.secondaryBtn}>
+            <Link href="/about-us" className={styles.secondaryBtn}>
               Learn About Us
             </Link>
           </div>
